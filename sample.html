@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://npmcdn.com/flickity@2/dist/flickity.css">
+<style>
+/* external css: flickity.css */
+
+* { box-sizing: border-box; }
+
+body { font-family: sans-serif; }
+
+
+.carousel-cell {width: 100%;height: 400px;margin-right: 10px;counter-increment: gallery-cell;color: rgba(255, 255, 255, 0.8); position: relative; /* Ensure that child elements can be positioned relative to this */}
+
+.carousel-cell>img {width: 100%;height: 100%;z-index: -1; /* Ensure image is behind the content */}
+
+.carousel-cell>div.carouselContent {position: absolute;top: 0; /* Position at the top */bottom: 0;left: 0;right: 0;margin: 100px 400px; /* Adjust the margin to move content */z-index: 9;height: auto;width: 50%; /* Ensure h1 takes full width */text-align: center; /* Center the text */color: black; /* Text color */background-color: rgba(255, 255, 255, 0.8); /* Light transparent background for content */padding: 10px; /* Add some padding */}
+
+.carouselContent>p {color: aquamarine;}
+
+/* Adjust the 'Read More' button inside .carouselContent */
+.carouselContent .RM {margin-top: 35px;border: 2px solid;display: flex;justify-content: center;align-items: center;width: 25%;height: 6vh;background-color: #00965a;}
+
+.carouselContent .RM a {color: blue;text-decoration: none;font-weight: bold;}
+
+.carouselContent .RM a:hover {text-decoration: underline;}
+
+
+/* big buttons, no circle */
+.flickity-prev-next-button {width: 100px;height: 100px;background: transparent;}
+/* arrow color */
+.flickity-prev-next-button .arrow {fill: white;}
+.flickity-prev-next-button.no-svg {color: white;}
+.flickity-prev-next-button:hover {background: transparent;}
+/* hide disabled button */
+.flickity-prev-next-button:disabled {display: none;}
+
+/******************************************* For Mobile Responsive *************************************************/
+
+@media only screen and (max-width:480px){
+  
+}
+
+</style>
+</head>
+<body>
+
+  <!-- Flickity HTML init -->
+  <div class="carousel" data-flickity>
+    <div class="carousel-cell">          
+                <img class="d-block w-100" src="./asserts/imagesRyse/banner-img-AboutUs.png" alt="">
+                <div class="carouselContent">
+                  <h1><a href="">What Is RankBrain and How It Affects Your SEO Strategy?</a></h1>
+                  <p><strong>by Ryse Digital Solutions | March 1, 2024 | SEO | 0 Comments</strong> 	
+                    								What Is RankBrain and How It Affects Your SEO Strategy? What Is Google RankBrain? Google's RankBrain, an AI algorithm, goes beyond keyword matching by deciphering search queries and providing relevant results. By learning from user interactions, it continually...								</p>
+
+                  <div class="RM">
+                    <a href="">Read More</a>
+                  </div>
+                </div>
+    </div>
+    <div class="carousel-cell">
+                <img class="d-block w-100" src="./asserts/imagesRyse/banner-img-AboutUs.png" alt="">
+    </div>
+    <div class="carousel-cell">
+                <img class="d-block w-100" src="./asserts/imagesRyse/banner-img-AboutUs.png" alt="">
+    </div>
+    <div class="carousel-cell">
+                <img class="d-block w-100" src="./asserts/imagesRyse/banner-img-AboutUs.png" alt="">
+    </div>
+    <div class="carousel-cell">
+                <img class="d-block w-100" src="./asserts/imagesRyse/banner-img-AboutUs.png" alt="">
+    </div>
+  </div>
+  
+
+  <script src="https://npmcdn.com/flickity@2/dist/flickity.pkgd.js"></script>
+
+</body>
+</html>

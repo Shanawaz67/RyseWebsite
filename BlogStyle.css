@@ -1,0 +1,157 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html,body { font-size: 16px; font-family: "DM Sans", sans-serif; background: #fff; color: #000; line-height: 1.7em; }
+
+a { text-decoration: none ; color: unset ; }
+ul { list-style: none; }
+img { vertical-align: middle; }
+
+p { font-size: 16px; }
+
+h1,h2,h3,h4,h5,h6 { line-height: 1.3em; }
+section { overflow: hidden; }
+ 
+.container { max-width: 1140px; margin: auto; }
+.widget-section { display: block; padding: 30px 16px; position: relative; width: 100%; height: auto;}
+
+button { border: 0; outline: 0; font-family: var(--ff); letter-spacing: 1px; }
+h1 h2 h3 h4 h5 h6 {color: var(--c3)}
+p{color: var(--c4)}
+html{
+  scroll-behavior: smooth;
+}
+body{background-image: url("asserts/imagesRyse/background.png");background-position: center;background-repeat: no-repeat;background-size: cover;width: 100%;height: 100%;background-attachment: fixed;}
+
+:root {
+
+	--c1 : #fff;
+	--c2 : #000;
+	--c3 : #333;
+	--c4 : #5b5555;
+  --bc1: #C4DFA9;
+  --bc2: #F7F3EE;
+
+	--bs: 0 3px 15px 0 #0000001a;
+	--bs2 : 0 3.4px 2.7px -30px #0000000f, 0 8.2px 8.9px -30px #00000012, 0 25px 40px -30px #00000033;
+	--bgC1 :#E7E9EB;
+
+	--ts : all 0.5s ease-in-out;
+
+	--gbg : linear-gradient(to right, var(--c1) 0%, var(--c2) 100%);
+	--gbgr : linear-gradient(to right, var(--c2) 0%, var(--c1) 100%);
+  --bgLinG : linear-gradient(45deg, #20A7CF, #35BE51, #1F95C7, #70D181);
+  --bglinG2 : linear-gradient(180deg, #2372A6, #297887); 
+
+
+	--ff : "Font Awesome 6 Pro";
+	--fs : 40px;
+    --ff2: "DM Sans", sans-serif;
+}
+
+/************************************ Blog Header CSS **********************************************/
+.headBlog{display: block;padding: 0px 16px;height: auto;width: 100%;position: relative;}
+
+.divHeadBlog{background-color: #666666;width: 100%;height: auto;}
+
+.inDivTop{padding: 0 16px;color: var(--c1);font-size: 14px;font-weight: 700;display: flex;justify-content: space-between; width: 40%;}
+
+.innerIcons:hover{color: #CFCFCF;}
+
+.inNavHeader{background-color: var(--c1);}
+
+.headLogo{width: 20%;}
+.headLogo>a{width: 100%;}
+.headLogo>a>img{width: 100%;}
+
+.inNavHeader{display: flex;justify-content: space-between;align-items: center;padding: 10px 20px;border-bottom: 2px solid #aaa;}
+.menuBar{width: 50%;}
+.ulMenuBar{width: 100%;display: flex;justify-content: space-between;align-items: center;color: #aaa;}
+.ulMenuBar>li:hover{color: var(--c2);}
+.icon{display: none;}
+
+/**************************** For Mobile Responsive *************************************/
+@media only screen and (max-width:480px){
+	.icon{display: block;}
+
+	.mbI{display: none;}
+
+	.inDivTop{width: 100%;}
+
+	.headLogo{width: 50%;}
+	.headLogo>a{width:100%}
+	.headLogo>a>img{width:100%}
+
+	.inNavHeader{padding:0;}
+
+    .mobile-container {max-width: 480px;margin: auto;background-color: #555;height: 500px;color: white;border-radius: 10px;position: relative;overflow-y:hidden;}
+
+	.ulMenuBar{display: grid;}
+	  
+	  .topnav {overflow: hidden;background-color: #333;position: relative; display: flex;flex-direction: column; /* Stack elements vertically */align-items: flex-start; /* Center elements horizontally */margin-right: 0;}
+	  
+	  .topnav #myLinks {max-height: 0; /* Start with max-height set to 0 */overflow: hidden; /* Hide content that goes beyond max-height */transition: max-height 1s ease; /* Transition for a smooth effect */width: 100%; }
+	  
+	  .topnav #myLinks.show {max-height: 500px; /* Expand to show content (adjust to fit your content height) */}
+	  
+	  .topnav a {color: white;padding: 14px 16px;text-decoration: none;font-size: 17px;display: block;}
+	  
+	  .topnav a.icon {background: transparent;display: block;position: absolute;right: 0;top: 15px;}
+	  
+	  .topnav a:hover {background-color: transparent ;color: #fff;}
+	  
+	  .active {color: white;}
+}
+
+/************************************************** For Tab Responsive *******************************************************/
+
+@media (min-width:500px) and (max-width:1024px){
+	.icon{display: block;}
+
+	.mbI{display: none;}
+
+	.inDivTop{width: 100%;}
+
+	.headLogo{width: 30%;}
+	.headLogo>a{width:100%}
+	.headLogo>a>img{width:100%}
+
+	.inNavHeader{padding:0;}
+
+    .mobile-container {max-width: 480px;margin: auto;background-color: #555;height: 500px;color: white;border-radius: 10px;position: relative;overflow-y:hidden;}
+
+	.ulMenuBar{display: grid;}
+	  
+	  .topnav {overflow: hidden;background-color: #333;position: relative; display: flex;flex-direction: column; /* Stack elements vertically */align-items: flex-start; /* Center elements horizontally */margin-right: 0;}
+	  
+	  .topnav #myLinks {max-height: 0; /* Start with max-height set to 0 */overflow: hidden; /* Hide content that goes beyond max-height */transition: max-height 1s ease; /* Transition for a smooth effect */width: 100%; }
+	  
+	  .topnav #myLinks.show {max-height: 500px; /* Expand to show content (adjust to fit your content height) */}
+	  
+	  .topnav a {color: white;padding: 14px 26px;text-decoration: none;font-size: 30px;display: block;}
+	  
+	  .topnav a.icon {background: transparent;display: block;position: absolute;right: 0;top: 20px;}
+	  
+	  .topnav a:hover {background-color: transparent ;color: #fff;}
+	  
+	  .active {color: white;}
+}
+
+/*********************************** For Footer Css **********************************/
+.footBlog{padding: 0 16px;height: auto;}
+.ulFootBlog{color: #BBB;padding: 30px 30px;display: flex;background-color: #2D2D2D;}
+.ulFootBlog>li{width:100%}
+.ulFootBlog>li:hover{color: #666;}
+.footCopyRights{background-color: #171717;display: flex;justify-content: space-around;align-items: center;}
+.iconFooter{color: var(--c1);display: flex;justify-content: space-around;align-items: center;width: 15%;font-size: 20px;}
+.iconFooter>li:hover{color: #BBB;}
+/********************************* For Mobile Responsive ****************************************/
+@media only screen and (max-width:480px){
+	.ulFootBlog{display: grid;}
+	.footCopyRights{display: grid;}
+	.iconFooter{width: 100%;}
+}
+
+/******************************* For Tab Responsive **********************************/
+@media(min-width:500px) and (max-width:1024px){
+	.ulFootBlog{display: grid;}
+}

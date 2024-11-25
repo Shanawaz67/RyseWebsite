@@ -1,0 +1,1014 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career</title>
+    <link rel="shortcut icon" href="./asserts/imagesRyse/logo.png" type="image/x-icon">
+    <!------------------------------ CSS Links --------------------------------------->
+    <link rel="stylesheet" href="https://npmcdn.com/flickity@2/dist/flickity.css">
+
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="stylesheet" type="text/css" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/all.css">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poller+One&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Itim&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Itim&family=Niramit:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-------------------------------------------------- Ryse Header --------------------------------------------------------->
+<header class="ryseHead">
+    <nav class="ryseHeadNav">
+        <div class="ryseHeadDiv sidebar" id="mySidebar">
+            <span><button class="closeBtn" onclick="closeNav()"><i class="fa-solid fa-xmark"></i></button></span>
+            <div class="ryseLogo">
+                <a href="./index.html"><img src="./asserts/imagesRyse/logo.png" alt="RyseLogo" title="Ryse Logo"></a>
+            </div>
+            <div class="ryseLinks">
+                <ul class="ulRyseLinks">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./AboutUs.html">About</a></li>
+                    <li class="dropDown">
+                        <button class="dropBtn">Services <i class="fa-solid fa-angle-down dA"></i></button>
+                        <div class="divDropDownContent">
+                            <ul class="ulDropDownContent">
+                                <li><a href="./SEO.html"><i class="fa-solid fa-chevrons-right"></i> Search Engine Optimization (SEO)</a></li>
+                                <li><a href="./PPC.html"><i class="fa-solid fa-chevrons-right"></i> Pay Per Click Advertising (PPC) </a></li>
+                                <li><a href="./ORM.html"><i class="fa-solid fa-chevrons-right"></i> Online Reputation Management (ORM)</a></li>
+                                <li><a href="./SMM.html"><i class="fa-solid fa-chevrons-right"></i> Social Media Management (SMM)</a></li>
+                                <li><a href="./ContentWriting.html"><i class="fa-solid fa-chevrons-right"></i> Content Copywriting</a></li>
+                                <li><a href="./WebDesigning.html"><i class="fa-solid fa-chevrons-right"></i> Web Design & Development</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="dropDown">
+                        <button class="dropBtn">Resources <i class="fa-solid fa-angle-down dA"></i></button>
+                        <div class="divDropDownContent">
+                            <ul class="ulDropDownContent">
+                                <li><a href="./Blog.html"><i class="fa-solid fa-chevrons-right"></i> Blog</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="./Testimonials.html">Testimonials</a></li>
+                    <li><a href="./Career.html">Career</a></li>
+                    <li><a href="./Contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="ryseLetTalk"><a href="" class="open-form-trigger">Let's Talk</a></div>
+        </div>
+        <div class="divMTLogo">
+            <a href="./index.html"><img src="./asserts/imagesRyse/logo.png" alt="RyseLogo" title="Ryse Logo"></a>
+        </div>
+    </nav>
+    <span><button class="openBtn" onclick="openNav()"><i class="fa-solid fa-bars"></i></button></span>
+</header>  
+
+
+<!--------------------------------------- Section For Banner Careers ---------------------------------------------->
+<style>
+    .divBanCar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .divBanCar>div+div{
+        width: 45%;
+    }
+    .divBanCar>div+div>h6{
+        font-size: 24px;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+    .divBanCar>div+div>h6+h1{
+        font-size: 32px;
+        font-weight: 800;
+        margin-bottom: 20px;
+    }
+    .divBanCar>div+div>h6+h1+p{
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+    .divBanCar>div+div>h6+h1+p+div{
+        border: 2px solid;
+        border-radius: 30px;
+        width: 30%;
+        height: 7vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /*********************************** For Mobile Responsive **************************************/
+    @media only screen and (max-width:480px){
+        .divBanCar{
+            display: grid;
+        }
+        .divBanCar>div{
+            width: 100%;
+        }
+        .divBanCar>div>img{
+            width: 100%;
+        }
+        .divBanCar>div+div{
+            width: 100%;
+        }
+        .divBanCar>div+div>h6+h1+p{
+            width: 100%;
+        }
+        .divBanCar>div+div>h6+h1+p+div{
+            width: 100%;
+        }
+    }
+
+    /************************************** For Tab Responsive ***********************************/
+    @media (min-width:500px) and (max-width:1024px){
+        .divBanCar{
+            display: grid;
+        }
+        .divBanCar>div{
+            width: 100%;
+        }
+        .divBanCar>div>img{
+            width: 100%;
+        }
+        .divBanCar>div+div{
+            width: 100%;
+        }
+        .divBanCar>div+div>h6+h1+p{
+            width: 100%;
+        }
+        .divBanCar>div+div>h6+h1+p+div{
+            width: 50%;
+        }
+    }
+</style>
+<section class="secBanCar widget-section">
+    <div class="divBanCar">
+        <div>
+            <img src="./asserts/imagesRyse/careers.webp" alt="">
+        </div>
+        <div>
+            <h6>CAREERS</h6>
+            <h1>GET ON THE TEAM! YOU ARE WHAT WE WANT.</h1>
+            <p>We are looking for innovative thinkers to help us build the largest digital marketing agency in Vijayawada. There are exciting job openings at Ryse Digital Solutions!</p>
+            <div><a href="#secCOP">View Open Positions</a></div>
+        </div>
+    </div>
+</section>
+
+<!-------------------------------------------- Section For Why Work With Ryse ---------------------------------------->
+<style>
+    .secWWR{
+        background-color: #EDF8FC;
+        
+    }
+    .divWWR{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .divWWR>div{
+        width: 45%;
+    }
+    .divWWR>div>h1{
+        font-size: 32px;
+        font-weight: 800;
+        margin-bottom: 30px;
+    }
+    .inDivWWRC{
+        margin-bottom: 20px;
+    }
+    .inDivWWRC>h3{
+        font-size: 26px;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+    .divWWR>div+div{
+        width: 45%;
+    }
+    .divWWR>div+div>img{
+        width: 100%;
+    }
+
+    /************************************* For Mobile Responsive *******************************************/
+    @media only screen and (max-width:480px){
+        .divWWR{
+            display: grid;
+            width: 100%;
+        }
+        .divWWR>div{
+            width: 100%;
+        }
+        .divWWR>div+div{
+            width: 100%;
+        }
+    }
+
+    /********************************* For Tab Responsive ******************************************/
+    @media (min-width:500px) and (max-width:1024px){
+        .divWWR{
+            display: grid;
+            width: 100%;
+        }
+        .divWWR>div{
+            width: 100%;
+        }
+        .divWWR>div+div{
+            width: 100%;
+        }
+    }
+</style>
+<section class="secWWR widget-section">
+    <div class="divWWR container">
+        <div>
+            <h1>Why is it a great place to work at Ryse Digital Solutions?</h1>
+            <div class="inDivWWRC">
+                <h3>Collaborate with Innovative Thinkers</h3>
+                <p>Join a diverse creative team where you will work with gifted people from different backgrounds to develop and realize creative concepts.</p>
+            </div>
+            <div class="inDivWWRC">
+                <h3>Learn, Develop, and Repeat</h3>
+                <p>Increase your proficiency in digital marketing by taking advantage of possibilities for ongoing education. Every project at Ryse Digital Solutions offers fresh chances for development as well as new difficulties.</p>
+            </div>
+            <div class="inDivWWRC">
+                <h3>Competitive Pay</h3>
+                <p>Take advantage of a competitive compensation that is commensurate with your worth and team efforts. We think you should be fairly compensated for your commitment and diligence.</p>
+            </div>
+            <div class="inDivWWRC">
+                <h3>Balance Between Work and Life</h3>
+                <p>We recognize the value of a healthy work-life balance. You can maintain your motivation and energy levels by balancing your personal and professional lives in our accommodating and encouraging atmosphere.</p>
+            </div>
+        </div>
+        <div>
+            <img src="./asserts/imagesRyse/careersunset.jpg" alt="">
+        </div>
+    </div>
+</section>
+
+<!-------------------------------------- Section For Life @ Ryse ----------------------------------------------->
+
+<style>
+    .divLR{
+        text-align: center;
+    }
+    .divLR>h1{
+        font-size: 32px;
+        font-weight: 800;
+        margin-bottom: 30px;
+    }
+    .divLR>h1+p{
+        font-weight: 500;
+        margin-bottom: 20px;
+    }
+</style>
+<section class="secLR widget-section">
+    <div class="divLR container">
+        <h1>Ryse Digital Solutions' Life</h1>
+        <p>There is more to Ryse Digital Solutions than laptops, coffee breaks, and pantry foods. It is teeming with driven individuals who are eager to succeed. You'll feel empowered to grow, make a genuine impact, and connect with a fantastic group of like-minded people here. What's the best part? The main goal is to enjoy yourself while doing it!</p>
+        <p>At Ryse Digital Solutions, we think that a fulfilling career path involves more than merely hitting goals. It's where you can develop your abilities, forge your own route to achievement, and discover the path to greatness. We are committed to providing you with the assistance you require in order to mold your career and discover fulfillment in your passions.</p>
+        <p>Come work with us in Vijayawada and discover a workplace unlike any other.</p>
+    </div>
+</section>
+
+<!-------------------------------- Section For Current Opening --------------------------------------------->
+
+<style>
+    .secCO{
+        background-color: #EDF8FC;
+    }
+    .divCO>h1{
+        text-align: center;
+        font-size: 32px;
+        font-weight: 800;
+        margin-bottom: 30px;
+    }
+    .inDivCO{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 20px 0px;
+    }
+    .innerDivCO1>h3{
+        font-size: 26px;
+        font-weight: 500;
+    }
+    .innerDivCO2{
+        width: 35%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .innerDivCO2>div{
+        border: 2px solid;
+        border-radius: 30px;
+        width: 30%;
+        height: 6vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /*********************************** For Mobile Responsive **********************************************/
+    @media only screen and (max-width:480px){
+        .innerDivCO2>p{
+            display: none;
+        }
+        .innerDivCO2>div{
+            width: 100%;
+        }
+    }
+
+    /************************************ For Tab Responsive **************************************/
+    @media (min-width:500px) and (max-width:1024px){
+        .innerDivCO2>div{
+            width: 70%;
+        }
+    }
+</style>
+<section class="secCO widget-section" id="secCOP">
+    <div class="divCO container">
+        <h1>Current Openings</h1>
+        <div>
+            <div class="inDivCO">
+                <div class="innerDivCO1"> 
+                    <h3>SEO Executive</h3>
+                    <p>Full Time | Onsite</p>
+                </div>
+                <div class="innerDivCO2">
+                    <p>Vijayawada, India</p>
+                    <div>
+                        <a href="./ApplyNow1.html">Apply Now</a>
+                    </div>
+                </div>
+                
+           </div>
+           <hr>
+           <div class="inDivCO">
+                <div class="innerDivCO1"> 
+                    <h3>Digital Account Manager</h3>
+                    <p>Full Time | Onsite</p>
+                </div>
+                <div class="innerDivCO2">
+                    <p>Vijayawada, India</p>
+                    <div>
+                        <a href="./DigitalAccountJD.html">Apply Now</a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="inDivCO">
+                <div class="innerDivCO1"> 
+                    <h3>SEO Manager</h3>
+                    <p>Full Time | Onsite</p>
+                </div>
+                <div class="innerDivCO2">
+                    <p>Vijayawada, India</p>
+                    <div>
+                        <a href="./SEOManagerJD.html">Apply Now</a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="inDivCO">
+                <div class="innerDivCO1"> 
+                    <h3>SEO Project Lead</h3>
+                    <p>Full Time | Onsite</p>
+                </div>
+                <div class="innerDivCO2">
+                    <p>Vijayawada, India</p>
+                    <div>
+                        <a href="./SEOProjectLeadJD.html">Apply Now</a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+        </div>
+    </div>
+    
+</section>
+
+<!----------------------------------- Section For Recruiting Process ---------------------------------------->
+<style>
+    .divRP>h1{
+        text-align: center;
+        font-size: 32px;
+        font-weight: 800;
+        margin-bottom: 20px;
+    }
+    .innerDivRP{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 22px;
+        margin: 30px 0;
+    }
+    .innerDivRP>img{
+        width: 8%;
+    }
+    .innerDivRP>img+div>h4{
+        font-size: 26px;
+        font-weight: 800;
+    }
+    .innerDivRP>img+div{
+        width: 45%;
+    }
+</style>
+<section class="secRP widget-section">
+    <div class="divRP container">
+        <h1>Our Ryse Digital Solutions Hiring Procedure</h1>
+        <div class="inDivRP">
+            <div class="innerDivRP">
+                <img src="./asserts/imagesRyse/ResumeIconRecurterIcon1.png" alt="">
+                <div>
+                    <h4>Send in</h4>
+                    <p>Get our attention by submitting your CV online.</p>
+                </div>
+            </div>
+            <div class="innerDivRP">
+                <img src="./asserts/imagesRyse/TapRecurterIcon2.png" alt="">
+                <div>
+                    <h4>Examining</h4>
+                    <p>After reviewing your application, our HR team will determine whether you are qualified for the position you are seeking.</p>
+                </div>
+            </div>
+            <div class="innerDivRP">
+                <img src="./asserts/imagesRyse/DonationsRecruiterIcon3.png" alt="">
+                <div>
+                    <h4>Tech Interview</h4>
+                    <p>Make contact with the team leader and present your qualifications.</p>
+                </div>
+            </div>
+            <div class="innerDivRP">
+                <img src="./asserts/imagesRyse/MediaclRecruiterIcon5.png" alt="">
+                <div>
+                    <h4>Convo, CEO</h4>
+                    <p>Prepare for a follow-up interview with our CEO if you ace the first one.</p>
+                </div>
+            </div>
+            <div class="innerDivRP">
+                <img src="./asserts/imagesRyse/AwaedRecruiterIcon6.png" alt="">
+                <div>
+                    <h4>Time of Offer</h4>
+                    <p>If we’re aligned with your goals and skills, we’ll send an employment offer your way.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!------------------------------------- Section For Current CV --------------------------------------->
+<style>
+    .divCCV{
+        background-color: #f9f9f9;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .divCCV>p{
+        font-size: 18px;
+        font-weight: 900;
+        margin: 30px 0;
+    }
+</style>
+<section class="secCCV widget-section">
+    <div class="divCCV container">
+        <p>Choose your ideal position at Ryse Digital Solutions in Vijayawada by submitting your most recent resume in our Current Openings area if you have a creative spirit and are enthusiastic about a career in digital marketing!</p>
+    </div>
+</section>
+
+<!------------------------------------------------- Section For Snag --------------------------------------------->
+<style>
+    .secSnag{
+        background-image: url("asserts/imagesRyse/snag.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: auto;
+    }
+    .inSecSnag{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 60px 0;
+    }
+    .inSecSnag>div{
+        width: 30%;
+    }
+    .inSecSnag>div>h1{
+        font-size: 40px;
+        font-weight: 800;
+        color: var(--c1);
+    }
+    .inSecSnag>div+div>p{
+        color: var(--c1);
+    }
+    .inSecSnag>div+div>p+div{
+        margin-top: 30px;
+        border: 2px solid;
+        border-radius: 50px;
+        width: 70%;
+        height: 6vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--c1);
+    }
+
+    /***************************** For Mobile Responsive ************************************/
+    @media only screen and (max-width:480px){
+        .secSnag{
+            height: auto;
+        }
+        .inSecSnag{
+            display: grid;
+            width: 100%;
+        }
+        .inSecSnag>div{
+            width: 100%;
+            margin-bottom: 30px;
+        }
+    }
+
+    /********************************************* For Tab Responsive ***********************************************************/
+    @media (min-width:500px) and (max-width:1024px){
+        .inSecSnag>div+div>p+div{
+            width: 100%;
+        }
+    }
+</style>
+<section class="widget-section">
+    <div class="container secSnag">
+        <div class="inSecSnag">
+            <div>
+                <h1>Get Your Ideal Job with Vijayawada's Ryse Digital Solutions!  </h1>
+            </div>
+            <div>
+                <p>Feel free to submit your profile even if there aren't any open positions right now. We at Ryse Digital Solutions in Vijayawada are constantly searching for bright people, and we will keep you in mind for any upcoming openings.</p>
+                <div>
+                    <a href="" class="open-form-triggerAN">Send Us Your Resume</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!------------------------------------------ Section For Pop Up Job Application ----------------------------------------------->
+<style>
+    /* Button used to open the contact form - fixed at the bottom of the page */
+        .open-button {
+            background: var(--bgLinG);
+            color: white;
+            padding: 16px 20px;
+            border: none;
+            cursor: pointer;
+            opacity: 1;
+            position: fixed;
+            bottom: 350px;
+            transform: rotate(-90deg);
+            right: -80px;
+            width: 200px;
+            z-index: 9;
+            font-family: var(--ff2);
+            font-size: 20px;
+        }
+
+        /* The popup form - hidden by default */
+        .form-popupAN {
+            display: none;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            top: 0;
+            border: 3px solid #f1f1f1;
+            z-index: 9;
+            box-shadow: var(--bs);
+            background: rgba(0, 0, 0, 0.8);
+            display: flex; /* Use Flexbox for centering */
+            justify-content: center; /* Horizontally center */
+            align-items: center; /
+        }
+
+        /* Add styles to the form container */
+        .form-containerAN {
+            max-width: 500px;
+            padding: 10px;
+            background-color: white;
+            padding: 16px 8px 0px 8px;
+            border-radius: 8px;
+        }
+        .form-containerAN h1{
+            text-align: center;
+            font-size: 20px;
+        }
+        .form-containerAN p{
+            text-align: center;
+            font-weight: 500;
+        }
+        /* Full-width input fields */
+        .form-containerAN input[type=text], .form-containerAN input[type=password], .form-containerAN input[type=email], .form-containerAN input[type=tel],.form-containerAN select, 
+        .form-containerAN textarea {
+            width: 100%;
+            padding: 15px;
+            margin: 5px 0 22px 0;
+            border: none;
+            background: #f1f1f1;
+            height: 45px;
+        }
+
+        /* When the inputs get focus, do something */
+        .form-containerAN input[type=text]:focus, .form-containerAN input[type=password]:focus , .form-containerAN input[type=email]:focus, .form-containerAN input[type=tel]:focus,.form-containerAN select:focus, 
+        .form-containerAN textarea:focus {
+            background-color: #ddd;
+            outline: none;
+        }
+        
+
+        /* Set a style for the submit/login button */
+        .form-containerAN .btn {
+            background: var(--bgLinG);
+            color: white;
+            padding: 16px 20px;
+            border: none;
+            cursor: pointer;
+            height: 45px;
+            width: 100%;
+            margin-bottom:10px;
+            opacity: 0.8;
+        }
+
+        /* Add a red background color to the cancel button */
+        .form-containerAN .cancel {
+            background: red;
+        }
+
+        /* Add some hover effects to buttons */
+        .form-containerAN .btn:hover, .open-button:hover {
+            opacity: 1;
+        }
+        .dark-background {
+            background: rgba(0, 0, 0, 0.8);
+            transition: background-color 0.3s ease;
+        }
+        .paraCVA{
+          text-align: left !important;
+          padding-left: 16px;
+          background-color: #f9f9f9;
+          height: 6vh;
+          display: flex;
+          align-items: center;
+        }
+        .divACV{
+          margin: 10px 0;
+        }
+
+        /************************** For Mobile Responsive *****************************/
+        @media only screen and (max-width:480px){
+            .open-button{
+                position: fixed;
+                bottom: 0;
+                left: 50%; /* Move to the center horizontally */
+                transform: translateX(-50%) rotate(360deg); /* Center the button and rotate it */
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: auto; /* Adjust width if needed */
+                right: auto; 
+            }
+        }
+</style>
+<section class="secPUF">
+    <div class="divPUF container">
+        <button class="open-button" onclick="openFormAN()">Work With Us</button>
+
+            <div class="form-popupAN" id="myFormAN">
+            <form action="/action_page.php" class="form-containerAN">
+                <h1>Job Application Form</h1>
+                <input type="text" placeholder="Full Name*" required name="name">
+                <input type="email" placeholder="Email Address*" name="email" required>
+                <input type="tel" placeholder="Mobile Number*" name="number">
+                <input type="text" placeholder="City Name*" name="cName">
+                <input type="text" name="wSite" id="wSite" placeholder="Website">
+                <select id="cars" name="cars">
+                    <option value="Digital Marketing">Select Position*</option>
+                    <option value="Search Engine Optimization (SEO)">SEO Executive</option>
+                    <option value="Pay Pre Click (PPC)">SEO Executive</option>
+                    <option value="Social Media Marketing (SMM)">SEO Executive</option>
+                    <option value="Online Reputation Management (ORM)">SEO Executive</option>
+                    <option value="Web Design & Development">SEO Executive</option>
+                    <option value="Others">Others</option>
+                  </select>
+                  <div class="divACV">
+                    <p class="paraCVA">Attach CV</p>
+                    <input type="file" name="fileR" placeholder="Send Your Resume">
+                  </div>
+                <button type="submit" class="btn">Submit</button>
+                <button type="button" class="btn cancel" onclick="closeFormAN()">Close</button>
+            </form>
+            </div>
+    </div>
+</section>
+ <!---------------------------- Section For PopUp Form ------------------------------------>
+ <style>
+    /* Button used to open the contact form - fixed at the bottom of the page */
+
+        /* The popup form - hidden by default */
+        .form-popup {
+            display: none;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            top: 0;
+            border: 3px solid #f1f1f1;
+            z-index: 9;
+            box-shadow: var(--bs);
+            background: rgba(0, 0, 0, 0.8);
+            display: flex; /* Use Flexbox for centering */
+            justify-content: center; /* Horizontally center */
+            align-items: center; /
+        }
+
+        /* Add styles to the form container */
+        .form-container {
+            max-width: 500px;
+            padding: 10px;
+            background-color: white;
+            padding: 16px 8px 0px 8px;
+            border-radius: 8px;
+        }
+        .form-container h1{
+            text-align: center;
+            font-size: 20px;
+        }
+        .form-container p{
+            text-align: center;
+            font-weight: 500;
+        }
+        /* Full-width input fields */
+        .form-container input[type=text], .form-container input[type=password], .form-container input[type=email], .form-container input[type=tel],.form-container select, 
+        .form-container textarea {
+            width: 100%;
+            padding: 15px;
+            margin: 5px 0 22px 0;
+            border: none;
+            background: #f1f1f1;
+            height: 45px;
+        }
+
+        /* When the inputs get focus, do something */
+        .form-container input[type=text]:focus, .form-container input[type=password]:focus , .form-container input[type=email]:focus, .form-container input[type=tel]:focus,.form-container select:focus, 
+        .form-container textarea:focus {
+            background-color: #ddd;
+            outline: none;
+        }
+        .form-container textarea {
+            resize: vertical;
+        }
+
+        /* Set a style for the submit/login button */
+        .form-container .btn {
+            background: var(--bgLinG);
+            color: white;
+            padding: 16px 20px;
+            border: none;
+            cursor: pointer;
+            height: 45px;
+            width: 100%;
+            margin-bottom:10px;
+            opacity: 0.8;
+        }
+
+        /* Add a red background color to the cancel button */
+        .form-container .cancel {
+            background: red;
+        }
+
+        /* Add some hover effects to buttons */
+        .form-container .btn:hover, .open-button:hover {
+            opacity: 1;
+        }
+        .dark-background {
+            background: rgba(53, 52, 52, 0.8);
+            transition: background-color 0.3s ease;
+        }
+</style>
+<section class="secPUF">
+    <div class="divPUF container">
+
+            <div class="form-popup" id="myForm">
+            <form action="/action_page.php" class="form-container">
+                <h1>Searching for Fresh Concepts to Expand Your Company?
+                </h1>
+                <p>For a free consultation, get in contact!
+
+                </p>
+                <input type="text" placeholder="Name" required name="name">
+                <input type="email" placeholder="Email" name="email" required>
+                <input type="tel" placeholder="Phone Number" name="number">
+                <input type="text" placeholder="Company Name" name="cName">
+                <input type="text" name="wSite" id="wSite" placeholder="Website">
+                <select id="cars" name="cars">
+                    <option value="Digital Marketing">Digital Marketing</option>
+                    <option value="Search Engine Optimization (SEO)">Search Engine Optimization (SEO)</option>
+                    <option value="Pay Pre Click (PPC)">Pay Pre Click (PPC)</option>
+                    <option value="Social Media Marketing (SMM)">Social Media Marketing (SMM)</option>
+                    <option value="Online Reputation Management (ORM)">Online Reputation Management (ORM)</option>
+                    <option value="Web Design & Development">Web Design & Development</option>
+                    <option value="Others">Others</option>
+                  </select>
+                  <textarea name="" id="" placeholder="Query"></textarea>
+                <button type="submit" class="btn">Submit</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+            </form>
+            </div>
+    </div>
+</section>
+
+    <!--------------------------------------------------- Footer Part ------------------------------------------------>
+
+    <footer class="secFoot">
+        <div class="divFoot widget-section">
+            <div class="inDivFoot container">
+                <div class="innerInDivImg">
+                    <a href="./index.html"><img src="./asserts/imagesRyse/logo.png" alt=""></a>
+                </div>
+                <div class="innerInDivContent1">
+                    <div><a href="./AboutUs.html">About Us</a></div>
+                    <div>
+                        <p>Our Services</p>
+                        <ul>
+                            <li>
+                                <a href="">Digital Marketing</a>
+                            </li>
+                            <li>
+                                <a href="./SEO.html">Search Engine Optimization</a>
+                            </li>
+                            <li>
+                                <a href="./PPC.html">PPC Advertising</a>
+                            </li>
+                            <li>
+                                <a href="./SMM.html">Social Media Marketing</a>
+                            </li>
+                            <li>
+                                <a href="./ORM.html">Online Reputation Management</a>
+                            </li>
+                            <li>
+                                <a href="./ContentWriting.html">Content Copywriting</a>
+                            </li>
+                            <li>
+                                <a href="./WebDesigning.html">Web Design & Development</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="innerInDivContent2">
+                    <div>
+                        <p>Resources</p>
+                        <div>
+                            <ul>
+                                <li>
+                                    <a href="./Blog.html">Blog</a>
+                                </li>
+                                <li>
+                                    <a href="./Testimonials.html">Testimonials</a>
+                                </li>
+                                <li>
+                                    <a href="./Career.html">Career</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <p>Reach Us @</p>
+                        <ul>
+                            <li>
+                                Reach us at <a href="">info@rysedigital.in</a>
+                            </li>
+                            <li>
+                                Phone: <a href="">+91-738-6050-188</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p>FOLLOW US</p>
+                        <ul>
+                            <li><a href="https://www.facebook.com/RyseDigitalSolutions"><i class="fa-brands fa-facebook"></i></a></li>
+                            <li><a href="https://www.instagram.com/ryse_digital__?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href="https://www.linkedin.com/in/digital-ryse-a55a01338?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B0ljkHgWaSRexPVwPXRbISA%3D%3D"><i class="fa-brands fa-linkedin"></i></a></li>
+                            <li><a href="https://www.youtube.com/@rysedigital-host"><i class="fa-brands fa-youtube"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="innerInDivContent3">
+                    <div>
+                        <p class="conPara"><a href="./Contact.html">Contact Us</a></p>
+                    </div>
+                    <div>
+                        <p>Ryse Digital Solutions 40-15-8/3, 3rd floor, Sindhu Towers, Nandamuri rd, Sriram Nagar, Benz Circle, Vijayawada – 520010.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footBot">
+                <p>Copyright © 2024. Ryse Digital Solutions Pvt.Ltd</p>
+            </div>
+        </div>
+    </footer>
+
+     <!-------------------------------- Script Code --------------------------------------->
+
+     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+     <script src="https://npmcdn.com/flickity@2/dist/flickity.pkgd.js"></script>
+ 
+     <script>
+         function openNav(){
+             if((window.innerWidth >=500) && (window.innerWidth <=1024)){
+                 document.getElementById("mySidebar").style.width="75%";
+                 document.querySelector(".divMTLogo").style.display = "none";
+             }else{
+                 document.getElementById("mySidebar").style.width = "100%";
+             }
+         }
+         
+         function closeNav() {
+           document.getElementById("mySidebar").style.width = "0";
+           document.querySelector(".divMTLogo").style.display = "block";
+           document.querySelector(".divMTLogo").style.transition = ".6s all ease"
+         }
+ 
+         var coll = document.getElementsByClassName("collapsible");
+             var i;
+ 
+             for (i = 0; i < coll.length; i++) {
+             coll[i].addEventListener("click", function() {
+                 this.classList.toggle("active");
+                 var content = this.nextElementSibling;
+                 if (content.style.display === "block") {
+                 content.style.display = "none";
+                 } else {
+                 content.style.display = "block";
+                 }
+             });
+             }
+
+             function openForm() {
+                document.getElementById("myForm").style.display = "flex"; // Display the form in the center
+                document.body.style.backgroundColor = "#333"; // Darken the background color
+                document.querySelector(".open-button").style.display = "none";
+            }
+
+            function closeForm() {
+                document.getElementById("myForm").style.display = "none";
+                document.body.style.backgroundColor = ""; // Reset the background color
+                document.querySelector(".open-button").style.display = "block";
+            }
+            document.querySelectorAll('.open-form-trigger').forEach(button => {
+                button.addEventListener('click', function(event) {
+                    event.preventDefault(); // Prevent default link behavior
+                    openForm();
+                });
+            });
+            document.addEventListener("DOMContentLoaded", function() {
+                document.getElementById("myForm").style.display = "none";
+            });
+             
+            /////////////////////////////////////// For Apply Now Job Application /////////////////////////////////////////////////
+
+            function openFormAN() {
+                document.getElementById("myFormAN").style.display = "flex"; // Display the form in the center
+                document.body.style.backgroundColor = "#333"; // Darken the background color
+                document.querySelector(".open-button").style.display = "none";
+            }
+
+            function closeFormAN() {
+                document.getElementById("myFormAN").style.display = "none";
+                document.body.style.backgroundColor = ""; // Reset the background color
+                document.querySelector(".open-button").style.display = "block";
+            }
+            document.querySelectorAll('.open-form-triggerAN').forEach(button => {
+                button.addEventListener('click', function(event) {
+                    event.preventDefault(); // Prevent default link behavior
+                    openFormAN();
+                });
+            });
+            document.addEventListener("DOMContentLoaded", function() {
+                document.getElementById("myFormAN").style.display = "none";
+            });
+         </script> 
+</body>
+</html>

@@ -1,0 +1,2202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEO</title>
+    <link rel="shortcut icon" href="./asserts/imagesRyse/logo.png" type="image/x-icon">
+    <!------------------------------ CSS Links --------------------------------------->
+    <link rel="stylesheet" href="https://npmcdn.com/flickity@2/dist/flickity.css">
+
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="stylesheet" type="text/css" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/all.css">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poller+One&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Itim&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Itim&family=Niramit:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+</head>
+<body>
+     <!-------------------------------------------------- Ryse Header --------------------------------------------------------->
+     <header class="ryseHead">
+        <nav class="ryseHeadNav">
+            <div class="ryseHeadDiv sidebar" id="mySidebar">
+                <span><button class="closeBtn" onclick="closeNav()"><i class="fa-solid fa-xmark"></i></button></span>
+                <div class="ryseLogo">
+                    <a href="./index.html"><img src="./asserts/imagesRyse/logo.png" alt="RyseLogo" title="Ryse Logo"></a>
+                </div>
+                <div class="ryseLinks">
+                    <ul class="ulRyseLinks">
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./AboutUs.html">About</a></li>
+                        <li class="dropDown">
+                            <button class="dropBtn">Services <i class="fa-solid fa-angle-down dA"></i></button>
+                            <div class="divDropDownContent">
+                                <ul class="ulDropDownContent">
+                                    <li><a href="./SEO.html"><i class="fa-solid fa-chevrons-right"></i> Search Engine Optimization (SEO)</a></li>
+                                    <li><a href="./PPC.html"><i class="fa-solid fa-chevrons-right"></i> Pay Per Click Advertising (PPC) </a></li>
+                                    <li><a href="./ORM.html"><i class="fa-solid fa-chevrons-right"></i> Online Reputation Management (ORM)</a></li>
+                                    <li><a href="./SMM.html"><i class="fa-solid fa-chevrons-right"></i> Social Media Management (SMM)</a></li>
+                                    <li><a href="./ContentWriting.html"><i class="fa-solid fa-chevrons-right"></i> Content Copywriting</a></li>
+                                    <li><a href="./WebDesigning.html"><i class="fa-solid fa-chevrons-right"></i> Web Design & Development</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="dropDown">
+                            <button class="dropBtn">Resources <i class="fa-solid fa-angle-down dA"></i></button>
+                            <div class="divDropDownContent">
+                                <ul class="ulDropDownContent">
+                                    <li><a href="./Blog.html"><i class="fa-solid fa-chevrons-right"></i> Blog</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="./Testimonials.html">Testimonials</a></li>
+                        <li><a href="./Career.html">Career</a></li>
+                        <li><a href="./Contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="ryseLetTalk"><a href="" class="open-form-trigger">Let's Talk</a></div>
+            </div>
+            <div class="divMTLogo">
+                <a href="./index.html"><img src="./asserts/imagesRyse/logo.png" alt="RyseLogo" title="Ryse Logo"></a>
+            </div>
+        </nav>
+        <span><button class="openBtn" onclick="openNav()"><i class="fa-solid fa-bars"></i></button></span>
+    </header>
+
+    <!------------------------------ Section For Banner SEO ---------------------------------->
+    <style>
+        .secBSEO{
+            width: 100%;
+            height: auto;
+            
+        }
+        .divBSEO{
+            width: 100%;
+            height: 90vh;
+            background-image: url("asserts/imagesRyse/banners1Seo.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-color: var(--c1);
+            display: flex;
+            justify-content: center; /* Centers horizontally */
+            align-items: center;  
+        }
+        .innerInDivSEo{
+            width: 50%;
+        }
+        .innerInDivSEo>h1{
+            font-size: 32px;
+            font-weight: 800;
+            margin-bottom: 30px;
+            color: var(--c3);
+        }
+        .innerInDivSEo>p{
+            font-size: 14px;
+            font-weight: 400;
+            margin-bottom: 30px;
+            color: var(--c4);
+            text-align: justify;
+        }
+        .innerInDivSEo>div{
+            width: 160px;
+            height: 50px;
+            margin: 0 auto;
+            color: var(--c1);
+            font-size: 18px;
+            font-weight: 600;
+            border-radius: 20px;
+            background: var(--bgLinG);
+            transition: transform 0.6s;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .innerInDivSEo>div:hover{
+            transform: scale(1.1);
+        }
+
+        /****************************************** For Mobile Responsive ***************************************************/
+        @media only screen and (max-width:480px){
+            .divBSEO{
+                width: 100%;
+                height: 90vh;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            .innerInDivSEo{
+                width: 100%;
+                margin-top: 60px;
+            }
+        }
+        /***************************** For Tab Responsive ****************************************/
+        @media (min-width:500px) and (max-width:1024px){
+            .divBSEO{
+                width: 100%;
+                height: 50vh;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            .innerInDivSEo{
+                width: 50%;
+                margin-top: 60px;
+            }
+        }
+    </style>
+    <section class="secBSEO">
+        <div class="divBSEO">
+            <div class="inDivBSEO container">
+                <div class="innerInDivSEo">
+                    <h1>Expert SEO Services Provider in Vijayawada</h1>
+                    <p>With eleven years of experience in the field, Ryse Digital Solutions is a seasoned SEO company in Vijayawada. Our knowledgeable staff has a successful track record of providing outstanding SEO services. With more than 500 happy customers, more than 20,000 keywords in Google's top 10 (SERP), and more than 2 lakh organic leads produced, we have the know-how to support the success of your company on the internet. Put your trust in us to help you expand significantly and increase your web presence.</p>
+                    <div><a href="" class="open-form-trigger">Get Started</a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+        <!---------------------------- Section For PopUp Form ------------------------------------>
+        <style>
+            /* Button used to open the contact form - fixed at the bottom of the page */
+                .open-button {
+                    background: var(--bgLinG);
+                    color: white;
+                    padding: 16px 20px;
+                    border: none;
+                    cursor: pointer;
+                    opacity: 1;
+                    position: fixed;
+                    bottom: 350px;
+                    transform: rotate(-90deg);
+                    right: -80px;
+                    width: 200px;
+                    z-index: 9;
+                    font-family: var(--ff2);
+                    font-size: 20px;
+                }
+    
+                /* The popup form - hidden by default */
+                .form-popup {
+                    display: none;
+                    position: fixed;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    top: 0;
+                    border: 3px solid #f1f1f1;
+                    z-index: 9;
+                    box-shadow: var(--bs);
+                    background: rgba(0, 0, 0, 0.8);
+                    display: flex; /* Use Flexbox for centering */
+                    justify-content: center; /* Horizontally center */
+                    align-items: center; /
+                }
+    
+                /* Add styles to the form container */
+                .form-container {
+                    max-width: 500px;
+                    padding: 10px;
+                    background-color: white;
+                    padding: 16px 8px 0px 8px;
+                    border-radius: 8px;
+                }
+                .form-container h1{
+                    text-align: center;
+                    font-size: 20px;
+                }
+                .form-container p{
+                    text-align: center;
+                    font-weight: 500;
+                }
+                /* Full-width input fields */
+                .form-container input[type=text], .form-container input[type=password], .form-container input[type=email], .form-container input[type=tel],.form-container select, 
+                .form-container textarea {
+                    width: 100%;
+                    padding: 15px;
+                    margin: 5px 0 22px 0;
+                    border: none;
+                    background: #f1f1f1;
+                    height: 45px;
+                }
+    
+                /* When the inputs get focus, do something */
+                .form-container input[type=text]:focus, .form-container input[type=password]:focus , .form-container input[type=email]:focus, .form-container input[type=tel]:focus,.form-container select:focus, 
+                .form-container textarea:focus {
+                    background-color: #ddd;
+                    outline: none;
+                }
+                .form-container textarea {
+                    resize: vertical;
+                }
+    
+                /* Set a style for the submit/login button */
+                .form-container .btn {
+                    background: var(--bgLinG);
+                    color: white;
+                    padding: 16px 20px;
+                    border: none;
+                    cursor: pointer;
+                    height: 45px;
+                    width: 100%;
+                    margin-bottom:10px;
+                    opacity: 0.8;
+                }
+    
+                /* Add a red background color to the cancel button */
+                .form-container .cancel {
+                    background: red;
+                }
+    
+                /* Add some hover effects to buttons */
+                .form-container .btn:hover, .open-button:hover {
+                    opacity: 1;
+                }
+                .dark-background {
+                    /* background: rgba(0, 0, 0, 0.8); */
+                    transition: background-color 0.3s ease;
+                }
+    
+                /************************** For Mobile Responsive *****************************/
+                @media only screen and (max-width:480px){
+                    .open-button{
+                        position: fixed;
+                        bottom: 0;
+                        left: 50%; /* Move to the center horizontally */
+                        transform: translateX(-50%) rotate(360deg); /* Center the button and rotate it */
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: auto; /* Adjust width if needed */
+                        right: auto; 
+                    }
+                }
+        </style>
+        <section class="secPUF">
+            <div class="divPUF container">
+                <button class="open-button" onclick="openForm()">Get In Touch</button>
+    
+                    <div class="form-popup" id="myForm">
+                    <form action="/action_page.php" class="form-container">
+                        <h1>Searching for Fresh Concepts to Expand Your Company?</h1>
+                        <p>For a free consultation, get in contact!</p>
+                        <input type="text" placeholder="Name" required name="name">
+                        <input type="email" placeholder="Email" name="email" required>
+                        <input type="tel" placeholder="Phone Number" name="number">
+                        <input type="text" placeholder="Company Name" name="cName">
+                        <input type="text" name="wSite" id="wSite" placeholder="Website">
+                        <select id="cars" name="cars">
+                            <option value="Digital Marketing">Digital Marketing</option>
+                            <option value="Search Engine Optimization (SEO)">Search Engine Optimization (SEO)</option>
+                            <option value="Pay Pre Click (PPC)">Pay Pre Click (PPC)</option>
+                            <option value="Social Media Marketing (SMM)">Social Media Marketing (SMM)</option>
+                            <option value="Online Reputation Management (ORM)">Online Reputation Management (ORM)</option>
+                            <option value="Web Design & Development">Web Design & Development</option>
+                            <option value="Others">Others</option>
+                          </select>
+                          <textarea name="" id="" placeholder="Query"></textarea>
+                        <button type="submit" class="btn">Submit</button>
+                        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                    </form>
+                    </div>
+            </div>
+        </section>
+
+        <!------------------------------------------- Section For Official Partner ------------------------------------------------->
+        <style>
+            .secOP{
+                width: 100%;
+                background-image: linear-gradient(45deg, #2372A6, #297887);
+            }
+            .inDivOP{
+                display: flex;
+                gap: 22px;
+            }
+            .inDivOPC{
+                width: 60%;
+                color: var(--c1);
+            }
+            .inDivOPC>h1{
+                color: var(--c1);
+                font-size: 32px;
+                font-weight: 600;
+                margin-bottom: 30px;
+            }
+            .inDivOPC>p{
+                color: var(--c1);
+            }
+            .inDivOP>div+div{
+                width: 20%;
+            }
+            .inDivOP>div+div>img{
+                width: 100%;
+            }
+
+            /***************************** For Mobile Responsive ****************************************/
+            @media only screen and (max-width:480px){
+                .inDivOP{
+                    width: 100%;
+                    display: grid;
+                }
+                .inDivOPC{
+                    width: 100%;
+                }
+                .inDivOP>div+div{
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+            /********************************** For Tab Responsive **************************************/
+            @media (min-width:500px) and (max-width:1024px){
+                .inDivOP{
+                    width: 100%;
+                    display: grid;
+                }
+                .inDivOPC{
+                    width: 100%;
+                }
+                .inDivOP>div+div{
+                    width: 50%;
+                    text-align: center;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin: 0 auto;
+                }
+            }
+        </style>
+        <section class="secOP">
+            <div class="divOP  widget-section">
+                <div class="inDivOP container">
+                    <div class="inDivOPC">
+                        <h1>We have official Google Partner status.</h1>
+                        <p>As a Google Partner, Ryse Digital Solutions makes use of its resources and experience to maximize its clients' online presence. Using Google's advertising platform, we offer specialized solutions to improve marketing initiatives and promote success. Our unrivaled tactics and track record of success are customized to each client's particular requirements, guaranteeing the successful accomplishment of their digital marketing goals.</p>
+                    </div>
+                    <div>
+                        <img src="./asserts/imagesRyse/google-partner.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-------------------------------------- Meet Our Clients ---------------------------------------->
+    <style>
+        .divMOC>div>h1{
+            font-size: 32px;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .oCImg{
+            display: flex; /* Flex layout for consistent item sizing */
+            flex-wrap: wrap; /* Wrap items to next row */
+            gap: 20px;
+        }
+        .oCImg>div{
+            flex: 1 1 10%; /* Flexible basis with 30% width */
+            text-align: center;
+            padding: 10px; /* Padding inside each block */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%; /* Ensure full stretch */
+        }
+    </style>
+    <section class="secMOC widget-section">
+        <div class="divMOC container">
+            <div>
+                <h1>Get to Know Our Customers</h1>
+                <div class="oCImg">
+                    <div><img src="./asserts/imagesRyse/our-client-logo-1.png" alt=""></div>
+                    <div><img src="./asserts/imagesRyse/our-client-logo-2.png" alt=""></div>
+                    <div><img src="./asserts/imagesRyse/our-client-logo-3.png" alt=""></div>
+                    <div><img src="./asserts/imagesRyse/our-client-logo-4.png" alt=""></div>
+                    <div><img src="./asserts/imagesRyse/our-client-logo-5.png" alt=""></div>
+                    <div><img src="./asserts/imagesRyse/our-client-logo-6.png" alt=""></div>
+                    <div><img src="./asserts/imagesRyse/our-client-logo-7.png" alt=""></div>
+                    <div><img src="./asserts/imagesRyse/our-client-logo-8.png" alt=""></div>
+                    <div><img src="./asserts/imagesRyse/our-client-logo-9.png" alt=""></div>
+                    <div><img src="./asserts/imagesRyse/our-client-logo-10.png" alt=""></div>
+                    <div><img src="./asserts/imagesRyse/our-client-logo-11.png" alt=""></div>
+                    <div><img src="./asserts/imagesRyse/our-client-logo-12.png" alt=""></div>
+                    <div><img src="./asserts/imagesRyse/our-client-logo-13.png" alt=""></div>
+                    <div><img src="./asserts/imagesRyse/our-client-logo-14.png" alt=""></div>
+                    <div><img src="./asserts/imagesRyse/our-client-logo-15.png" alt=""></div>
+                    <div><img src="./asserts/imagesRyse/our-client-logo-16.png" alt=""></div>
+                    <div><img src="./asserts/imagesRyse/our-client-logo-17.png" alt=""></div>
+                    <div><img src="./asserts/imagesRyse/our-client-logo-18.png" alt=""></div>
+                    <div><img src="./asserts/imagesRyse/our-client-logo-19.png" alt=""></div>
+                    <div><img src="./asserts/imagesRyse/our-client-logo-20.png" alt=""></div>
+                    <div><img src="./asserts/imagesRyse/our-client-logo-21.png" alt=""></div>
+                    <div><img src="./asserts/imagesRyse/our-client-logo-22.png" alt=""></div>
+                    <div><img src="./asserts/imagesRyse/our-client-logo-23.png" alt=""></div>
+                    <div><img src="./asserts/imagesRyse/our-client-logo-24.png" alt=""></div>
+                    <div><img src="./asserts/imagesRyse/our-client-logo-25.png" alt=""></div>
+                    <div><img src="./asserts/imagesRyse/our-client-logo-26.png" alt=""></div>
+                    <div><img src="./asserts/imagesRyse/our-client-logo-27.png" alt=""></div>
+                    <div><img src="./asserts/imagesRyse/our-client-logo-28.png" alt=""></div>
+                    <div><img src="./asserts/imagesRyse/our-client-logo-29.png" alt=""></div>
+                    <div><img src="./asserts/imagesRyse/our-client-logo-30.png" alt=""></div>
+                    <div><img src="./asserts/imagesRyse/our-client-logo-31.png" alt=""></div>
+                    <div><img src="./asserts/imagesRyse/our-client-logo-32.png" alt=""></div>
+                    <div><img src="./asserts/imagesRyse/our-client-logo-33.png" alt=""></div>
+                    <div><img src="./asserts/imagesRyse/our-client-logo-34.png" alt=""></div>
+                    <div><img src="./asserts/imagesRyse/our-client-logo-35.png" alt=""></div>
+                    <div><img src="./asserts/imagesRyse/our-client-logo-36.png" alt=""></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!------------------------------------- Section For SEO Expertise ------------------------------------------------------>
+    <style>
+        .secSEOE{
+            background-image: linear-gradient(to top right, #E8F4FD 20%, transparent, transparent);
+        }
+        .inDivSEOC>h1{
+            width: 100%;
+            text-align: center;
+            font-size: 32px;
+            font-weight: 800;
+        }
+        .innerInDivSEOC{
+            width: 100%;
+            margin-top: 40px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .inCardSEOC{
+            width: 15%;
+            text-align: center;
+            box-shadow: var(--bs);
+        }
+        .inCardSEOC>img{
+            width: 40%;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .inCardSEOC>h1{
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        .inCardSEOC>p{
+            width: 100%;
+            font-size: 14px;
+            font-weight: 500;
+            color: var(--c4);
+        }
+        .innerInDivSEOCC{
+            margin-top: 30px;
+            color: var(--c4);
+        }
+        .innerInDivSEOCC>p{
+            margin-bottom: 20px;
+        }
+        /******************************* For Mobile Responsive ***********************************/
+        @media only screen and (max-width:480px){
+            .innerInDivSEOC{
+                display: grid;
+                grid-template-columns: 1fr; /* Creates a single column layout */
+                width: 100%;
+            }
+            .inCardSEOC{
+                width: 100%;
+                margin-bottom: 30px;
+            }
+        }
+    </style>
+    <section class="secSEOE widget-section">
+        <div class="divSEOC container">
+            <div class="inDivSEOC">
+                <h1>Use Our SEO Experience to Increase Your Online Presence</h1>
+                <div class="innerInDivSEOC">
+                    <div class="inCardSEOC">
+                        <img src="./asserts/imagesRyse/seo_services_icon-1.png" alt="">
+                        <h1>20+</h1>
+                        <p>SEO Experts</p>
+                    </div>
+                    <div class="inCardSEOC">
+                        <img src="./asserts/imagesRyse/seo_services_icon-2.png" alt="">
+                        <h1>10+</h1>
+                        <p>Years of Industry Experience</p>
+                    </div>
+                    <div class="inCardSEOC">
+                        <img src="./asserts/imagesRyse/badageSOEicon.png" alt="">
+                        <h1>50+</h1>
+                        <p>Clients</p>
+                    </div>
+                    <div class="inCardSEOC">
+                        <img src="./asserts/imagesRyse/bussinessSSEOicon.png" alt="">
+                        <h1>20000+</h1>
+                        <p>Keywords ranked on 1st Page</p>
+                    </div>
+                    <div class="inCardSEOC">
+                        <img src="./asserts/imagesRyse/mouthSOEicon.png" alt="">
+                        <h1>200000+</h1>
+                        <p>Quality Leads Delivered</p>
+                    </div>
+                </div>
+                <div class="innerInDivSEOCC">
+                    <p>Ryse Digital Solutions, one of the leading SEO firms in Vijayawada, is aware of the difficulties associated with digital marketing. Our team of highly qualified SEO specialists oversees every step of the process, from careful planning and execution to producing significant outcomes like higher keyword ranks, more organic traffic, and improved lead generation and sales.</p>
+                    <p>To determine possible keywords in your market and assess your target audience, we take a thorough approach. We coordinate our efforts with your company's goals by putting ROI-driven SEO techniques into practice. We take a proactive stance, updating our SEO strategies on a yearly basis and establishing growth goals to make sure your company thrives and benefits greatly from our experience.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!------------------------------------------ Section For All SEO ------------------------------------------------>
+    <style>
+        .secASEO{
+            width: 100%;
+            height: auto;
+            background-image: url("asserts/imagesRyse/expert_seo_banner.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .indivASEO>h1{
+            text-align: center;
+            font-size: 32px;
+            font-weight: 800;
+            color: var(--c1);
+        }
+        .indivASEO>p{
+            text-align: center;
+            color: var(--c1);
+            margin-top: 20px;
+        }
+        .cardASEO{
+            display: flex;
+            justify-content: space-between;
+        }
+        .inCardASEO{
+            width: 20%;
+            margin-top: 30px;
+            text-align: center;
+            box-shadow: var(--bs);
+            border-radius: 10px;
+            background-color: rgb(255 255 255 / 10%);
+            transition: .3s all;
+        }
+        .inCardASEO:hover{
+            transform: scale(1.03);
+        }
+        .inCardASEO>a{
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .inCardASEO>a>img{
+            margin-top: 20px;
+        }
+        .inCardASEO>a>h1{
+            color: var(--c1);
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+
+        /**************************** For Mobile Responsive ************************************/
+        @media only screen and (max-width:480px){
+            .cardASEO{
+                display: grid;
+                grid-template-columns: 1fr;
+                margin: 20px 0 20px 0;
+            }
+            .inCardASEO{
+                width: 100%;
+            }
+        }
+    </style>
+    <section class="secASEO">
+        <div class="divASEO widget-section">
+            <div class="indivASEO container">
+                <h1>Professional SEO Services in Vijayawada from Ryse Digital Solutions</h1>
+                <p>The expert SEO services offered by Ryse Digital Solutions can provide you with a competitive edge.</p>
+                <p>SEO is essential for successful online marketing in the current digital environment. It serves as the cornerstone for expanding your web business. Being ranked highly in search results is crucial because search engines serve as gatekeepers for online visibility. More than 65% of people click on the top ten results that are prominently presented on the SERP, according to statistics. One of India's top SEO companies, Ryse Digital Solutions, focuses on providing businesses all around the world with excellent SEO services. Give us your SEO requirements, and you'll profit from a major competitive advantage and the ability to keep ahead of the competition.</p>
+                <div class="cardASEO">
+                    <div class="inCardASEO">
+                        <a href="./GlobalSEO.html">
+                            <img src="./asserts/imagesRyse/expert-icon-1.png" alt="">
+                            <h1>Worldwide SEO</h1>
+                        </a>
+                    </div>
+                    <div class="inCardASEO">
+                        <a href="./LocalSEO.html">
+                            <img src="./asserts/imagesRyse/expert-icon-2.png" alt="">
+                            <h1>LOCAL SEO</h1>
+                        </a>
+                    </div>
+                    <div class="inCardASEO">
+                        <a href="./EnterprisesSEO.html">
+                            <img src="./asserts/imagesRyse/expert-icon-3.png" alt="">
+                            <h1>BUSINESS SEO</h1>
+                        </a>
+                    </div>
+                    <div class="inCardASEO">
+                        <a href="./EcommerceSEO.html">
+                            <img src="./asserts/imagesRyse/expert-icon-4.png" alt="">
+                            <h1>SEO for e-commerce</h1>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!----------------------------- Section For BOSEO --------------------------------------->
+    <style>
+        .inDivBOSEO>h1{
+            text-align: center;
+            font-size: 32px;
+            font-weight: 800;
+            color: var(--c3);
+        }
+        .innerInDivBOSEO{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap; /* Allows items to wrap to the next row */
+            justify-content: space-around;
+        }
+        .cardBOSEO{
+            width: 30%;
+            text-align: center;
+            margin: 30px 0 30px 0;
+            transition: 0.6s ease all;
+        }
+        .cardBOSEO:hover{
+            box-shadow: var(--bs);
+        }
+        .cardBOSEO>img{
+            margin: 30px 10px 30px 10px;
+            width: 20%;
+        }
+        .cardBOSEO>h4{
+            margin: 30px 10px 30px 10px;
+            color: var(--c3);
+            font-size: 22px;
+        }
+        .cardBOSEO>p{
+            margin: 30px 10px 30px 10px;
+            color: var(--c4);
+            font-size: 14px;
+        }
+
+        /******************************** For Mobile Responsive ********************************************/
+        @media only screen and (max-width:480px){
+            .innerInDivBOSEO{
+                display: grid;
+                grid-template-columns: 1fr;
+                margin: 20px 0 20px 0;
+            }
+            .cardBOSEO{
+                width: 100%;
+            }
+        }
+
+        /********************************* For Tab Responsive *******************************************/
+        @media (min-width:500px) and (max-width:1024px){
+            .innerInDivBOSEO{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                margin: 20px 0 20px 0;
+                gap: 20px;
+            }
+            .cardBOSEO{
+                width: 100%; /* Ensures each card fills the grid column */
+                text-align: center;
+                margin: 0 auto;  width: 100%;
+            }
+        }
+    </style>
+    <section class="secBOSEO widget-section">
+        <div class="divBOSEO container">
+            <div class="inDivBOSEO">
+                <h1>Advantages of SEO Services</h1>
+                <div class="innerInDivBOSEO">
+                    <div class="cardBOSEO">
+                        <img src="./asserts/imagesRyse/wbsiteIconSeo.png" alt="">
+                        <h4>A rise in targeted traffic</h4>
+                        <p>By conducting comprehensive keyword research and implementing effective on-page optimization strategies, we drive targeted traffic to your website, boosting its visibility and organic search rankings. At Ryse Digital Solutions in Vijayawada, we ensure that every aspect of your SEO campaign is tailored to meet your business goals and maximize your online presence.</p>
+                    </div>
+                    <div class="cardBOSEO">
+                        <img src="./asserts/imagesRyse/paymentIconSeo.png" alt="">
+                        <h4>Lessen Your Reliance on Paid Advertising</h4>
+                        <p>We can increase your website's exposure and organic ranks by putting good SEO methods into practice. This will lessen your need for expensive paid advertising efforts and produce long-term, sustainable traffic and leads. Our goal at Ryse Digital Solutions in Vijayawada is to produce outcomes that support your company's long-term expansion and prosperity.</p>
+                    </div>
+                    <div class="cardBOSEO">
+                        <img src="./asserts/imagesRyse/serviceNetworkIconSeo.png" alt="">
+                        <h4>Establishing a Brand</h4>
+                        <p>Our all-inclusive SEO tactics at Ryse Digital Solutions in Vijayawada include content marketing, social media management, and eye-catching graphic design. Together, these initiatives build a powerful brand presence, improve brand recognition, and stimulate deep consumer interaction.</p>
+                    </div>
+                    <div class="cardBOSEO">
+                        <img src="./asserts/imagesRyse/sales-funnelIconSeo.png" alt="">
+                        <h4>Increased User Involvement</h4>
+                        <p>In order to effectively capture and hold your audience's attention, we at Ryse Digital Solutions in Vijayawada increase user engagement by developing engaging and interactive content, fostering regular interaction on social media platforms, and putting user-friendly website designs into practice.</p>
+                    </div>
+                    <div class="cardBOSEO">
+                        <img src="./asserts/imagesRyse/benefits-icon-6.png" alt="">
+                        <h4>Eligible Leads</h4>
+                        <p>Our data-driven approach to lead generation at Ryse Digital Solutions in Vijayawada guarantees that your online presence is tailored to the appropriate channels and audience. As a result, your company receives more high-quality leads and has a higher return on investment.</p>
+                    </div>
+                    <div class="cardBOSEO">
+                        <img src="./asserts/imagesRyse/internetIconSeo.png" alt="">
+                        <h4>Reduced CPA</h4>
+                        <p>By using efficient search engine optimization (SEO) techniques, Ryse Digital Solutions in Vijayawada can help you increase organic visibility, attract targeted traffic, and lower your cost per acquisition (CPA).</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--------------------------- Section For SEO Process ---------------------------------->
+    <style>
+        .inDivSEOP>h1{
+            text-align: center;
+            font-size: 32px;
+            font-weight: 800;
+            color: var(--c3);
+        }
+        .innerInDivSEOP{
+            display: flex;
+            flex-wrap: wrap; /* Allows items to wrap to the next row */
+            justify-content: space-around;
+        }
+        .cardInDivSEOP{
+            position: relative;
+            display: block;
+            width: 30%;
+            text-align: center;
+            margin: 30px 0 30px 0; 
+            transition: 0.6s ease all;
+        }
+        .cardInDivSEOP>h4{
+            margin: 30px 10px 30px 10px;
+            color: var(--c3);
+            font-size: 20px;
+        }
+        .cardInDivSEOP::after{
+            content: "";
+            width: 100px;
+            height: 50px;
+            background-image: url("asserts/imagesRyse/direction-arrows.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            display: block;
+            position: absolute;
+            right: -40px;
+            top: 40%;
+            transform: translate(70%, -50%);
+        }
+        /* This targets every .cardInDivSEOP that is the last in a row of 3 */
+        .cardInDivSEOP:nth-child(3n)::after {
+            display: none; /* Hide the arrow on the last card in each row */
+        }
+
+        /***************************** For Mobile Responsive ***********************************/
+        @media only screen and (max-width:480px){
+            .innerInDivSEOP{
+                display: grid;
+                grid-template-columns: 1fr;
+                gap: 30px; 
+            }
+            .cardInDivSEOP{
+                width: 100%;
+                margin-top: 30px;
+                position: relative;
+            }
+        }
+        
+        /******************************** For Tab Responsive **********************************/
+        @media (min-width:480px) and (max-width:1024px){
+            .cardInDivSEOP::after{
+                width: 100px;
+                height: 50px;
+                display: block;
+                position: absolute;
+                right: 15px;
+                top: 30%;
+                transform: translate(70%, -50%);
+            }
+        }
+    </style>
+
+    <section class="secSEOP widget-section">
+        <div class="divSEOP container">
+            <div class="inDivSEOP">
+                <h1>Our SEO Process</h1>
+                <div class="innerInDivSEOP">
+                    <div class="cardInDivSEOP">
+                        <img src="./asserts/imagesRyse/seo_process_icon-1.png" alt="">
+                        <h4>Knowing Your Business</h4>
+                    </div>
+                    <div class="cardInDivSEOP">
+                        <img src="./asserts/imagesRyse/seo_process_icon-2.png" alt="">
+                        <h4>Investigating Keywords</h4>
+                    </div>
+                    <div class="cardInDivSEOP">
+                        <img src="./asserts/imagesRyse/seo_process_icon-3.png" alt="">
+                        <h4>Enhancing Technical Features</h4>
+                    </div>
+                    <div class="cardInDivSEOP">
+                        <img src="./asserts/imagesRyse/seo_process_icon-4.png" alt="">
+                        <h4>Improving On-Page Components</h4>
+                    </div>
+                    <div class="cardInDivSEOP">
+                        <img src="./asserts/imagesRyse/seo_process_icon-5.png" alt="">
+                        <h4>Content Optimization</h4>
+                    </div>
+                    <div class="cardInDivSEOP">
+                        <img src="./asserts/imagesRyse/seo_process_icon-6.png" alt="">
+                        <h4>Enhancing UI/UX</h4>
+                    </div>
+                    <div class="cardInDivSEOP">
+                        <img src="./asserts/imagesRyse/seo_process_icon-7.png" alt="">
+                        <h4>Increasing the Rate of Conversion</h4>
+                    </div>
+                    <div class="cardInDivSEOP">
+                        <img src="./asserts/imagesRyse/seo_process_icon-8.png" alt="">
+                        <h4>Observation and Reporting</h4>
+                    </div>
+                    <div class="cardInDivSEOP">
+                        <img src="./asserts/imagesRyse/seo_process_icon-9.png" alt="">
+                        <h4>Controlling Backlinks</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!------------------------------ Section For ROI ----------------------------------->
+    <style>
+        .inDivROI>h1{
+            text-align: center;
+            font-size: 32px;
+            font-weight: 800;
+            color: var(--c3);
+        }
+        .innerInDivROI{
+            display: flex;
+        }
+        .cardROI{
+            border: 1px solid ;
+            width: 25%;
+            margin: 30px 0;
+            text-align: center;
+        }
+        .cardROI>img{
+            margin: 20px 0;
+        }
+        .cardROI>h4{
+            margin: 20px 0;
+            color: var(--c3);
+            font-size: 20px;
+        }
+        .cardROI>p{
+            margin: 20px 0;
+            color: var(--c4);
+            font-size: 14px;
+        }
+
+        /************************************** For Mobile Responsive ************************************************/
+        @media only screen and (max-width:480px){
+            .innerInDivROI{
+                display: grid;
+                grid-template-columns: 1fr;
+            }
+            .cardROI{
+                width: 100%;
+                margin-bottom: 20px;
+            }
+        }
+
+        /***************************** For Tab Responsive *************************************/
+        @media (min-width:500px) and (max-width:1024px){
+            .innerInDivROI{
+                display: grid;
+                grid-template-columns: 1fr 1fr; /* Sets two columns per row */
+                gap: 30px; /* Adds space between the cards */
+                margin-top: 30px;
+            }
+            .cardROI {
+                width: 100%; /* Ensures each card fills the grid column */
+                text-align: center;
+                margin: 0 auto; /* Centers the card content */
+            }
+        }
+    </style>
+    <section class="secROI widget-section">
+        <div class="divROI container">
+            <div class="inDivROI">
+                <h1>Return on Investment for SEO Services</h1>
+                <div class="innerInDivROI">
+                    <div class="cardROI">
+                        <img src="./asserts/imagesRyse/rio_seo_arrows_icon1.png" alt="">
+                        <h4>An improvement in the ranking of keywords</h4>
+                        <p>Our comprehensive SEO tactics and keyword optimization strategies at Ryse Digital Solutions in Vijayawada can significantly raise the search engine ranks of your website. We guarantee that more keywords will appear on the first page, increasing your internet presence and promoting natural growth.</p>
+                    </div>
+                    <div class="cardROI">
+                        <img src="./asserts/imagesRyse/rio_seo_arrows_icon2.png" alt="">
+                        <h4>A Rise in CTR</h4>
+                        <p>To increase the visibility of your website, we at Ryse Digital Solutions in Vijayawada use data-driven optimization techniques and write persuasive ad copy. This strategy generates targeted traffic, which raises your company's click-through rates (CTR) considerably.</p>
+                    </div>
+                    <div class="cardROI">
+                        <img src="./asserts/imagesRyse/rio_seo_arrows_icon3.png" alt="">
+                        <h4>Growth in Organic Traffic </h4>
+                        <p>At Ryse Digital Solutions in Vijayawada, we carry out thorough SEO audits, carry out in-depth keyword research, and put into practice efficient on-page and off-page optimization techniques to dramatically improve your website's organic traffic and search engine ranks.</p>
+                    </div>
+                    <div class="cardROI">
+                        <img src="./asserts/imagesRyse/rio_seo_arrows_icon4.png" alt="">
+                        <h4>A Rise in Conversions </h4>
+                        <p>Our all-inclusive conversion rate optimization solutions at Ryse Digital Solutions in Vijayawada concentrate on improving the user experience, content, and design of your website to optimize conversions and increase revenue and leads for your company.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!---------------------------------------- Section For LetsTalk ---------------------------------------->
+
+    <style>
+        .divLT{
+            background-color: #245B8F;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 60px;
+            border-radius: 10px;
+        }
+        .divLT>h1{
+            width: 50%;
+            margin: 40px 0;
+            font-size: 36px;
+            font-weight: 800;
+            color: var(--c1);
+        }
+        .divLT>p{
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 20%;
+            height: 60px;
+            font-size: 32px;
+            font-weight: 700;
+            background-color: var(--c1);
+            color: #245B8F;
+            border-radius: 50px;
+        }
+
+        /*************************** For Mobile Responsive **********************************/
+        @media only screen and (max-width:480px){
+            .divLT{
+                display: grid;
+            }
+            .divLT>h1{
+                width: 100%;
+            }
+            .divLT>p{
+                width: 100%;
+            }
+        }
+    </style>
+    <section class="secLT widget-section">
+        <div class="divLT container">
+            <h1>Our all-inclusive SEO services will surely help your company.For what reason are you waiting?</h1>
+            <p><a href="" class="open-form-trigger">Let's Talk</a></p>
+        </div>
+    </section>
+
+    <!----------------------------- Section For Mast --------------------------------------->
+    <style>
+        .inDivMast>h1{
+            text-align: center;
+            font-size: 32px;
+            font-weight: 800;
+            color: var(--c3);
+        }
+        .innerInDivMast{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap; /* Allows items to wrap to the next row */
+            justify-content: space-around;
+        }
+        .cardMast{
+            width: 30%;
+            text-align: center;
+            margin: 30px 0 30px 0;
+            transition: 0.6s ease all;
+        }
+        .cardMast:hover{
+            box-shadow: var(--bs);
+            background-image: linear-gradient(to top right, #E8F4FD 20%, transparent, transparent)
+        }
+        .cardMast>img{
+            margin: 30px 10px 30px 10px;
+        }
+        .cardMast>h4{
+            margin: 30px 10px 30px 10px;
+            color: var(--c3);
+            font-size: 22px;
+        }
+        .cardMast>img{
+            width: 20%;
+        }
+        .cardMast>p{
+            margin: 30px 10px 30px 10px;
+            color: var(--c4);
+            font-size: 14px;
+        }
+
+        /******************************** For Mobile Responsive ********************************************/
+        @media only screen and (max-width:480px){
+            .innerInDivMast{
+                display: grid;
+                grid-template-columns: 1fr;
+                margin: 20px 0 20px 0;
+            }
+            .cardMast{
+                width: 100%;
+            }
+        }
+         /********************************* For Tab Responsive *******************************************/
+         @media (min-width:500px) and (max-width:1024px){
+            .innerInDivMast{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                margin: 20px 0 20px 0;
+                gap: 20px;
+            }
+            .cardMast{
+                width: 100%; /* Ensures each card fills the grid column */
+                text-align: center;
+                margin: 0 auto;  width: 100%;
+            }
+        }
+    </style>
+    <section class="secMast widget-section">
+        <div class="divMast container">
+            <div class="inDivMast">
+                <h1>Understanding SEO in a Variety of Industries: Our Specialties</h1>
+                <div class="innerInDivMast">
+                    <div class="cardMast">
+                        <img src="./asserts/imagesRyse/educationIconSeo1.png" alt="">
+                        <h4><a href="./SEOForEdu.html">SEO for Learning Websites</a></h4>
+                        <p>Our SEO services for educational websites at Ryse Digital Solutions in Vijayawada are intended to improve your online visibility and assist you in reaching your target audience. We accomplish this by optimizing content, conducting thorough keyword research, putting technical SEO tactics into practice, and constructing high-quality backlinks.</p>
+                    </div>
+                    <div class="cardMast">
+                        <img src="./asserts/imagesRyse/technologyIconSeo2.png" alt="">
+                        <h4><a href="./SEOForTech.html">SEO for Websites in the Technology Sector  </a></h4>
+                        <p>Our specialty at Ryse Digital Solutions in Vijayawada is developing original SEO plans that will increase the visibility of your website, draw in relevant visitors, and fortify your online presence. Our customized strategy is intended to spur expansion and guarantee your company's success in the cutthroat world of technology.</p>
+                    </div>
+                    <div class="cardMast">
+                        <img src="./asserts/imagesRyse/shopping-cartIconSeo3.png" alt="">
+                        <h4><a href="./SEOForEcommerce.html">SEO for Websites in E-Commerce </a></h4>
+                        <p>Our specialty at Ryse Digital Solutions in Vijayawada is using efficient SEO strategies to increase organic traffic to e-commerce websites. To increase your potential for online sales, our tactics center on enhancing product exposure and streamlining conversion funnels.</p>
+                    </div>
+                    <div class="cardMast">
+                        <img src="./asserts/imagesRyse/customer-careIconSeo4.png" alt="">
+                        <h4><a href="./SEOForHealthCare.html">SEO for Websites in the Healthcare Industry </a></h4>
+                        <p>Our specialty at Ryse Digital Solutions in Vijayawada is using SEO strategies tailored to the healthcare industry to increase your online visibility. Our tactics assist in drawing in certain visitors and accomplishing important goals including scheduling appointments, obtaining patient data, and managing one's internet reputation.</p>
+                    </div>
+                    <div class="cardMast">
+                        <img src="./asserts/imagesRyse/cityscapeIconSeo5.png" alt="">
+                        <h4><a href="./SEOForRealState.html">SEO for Websites in the Real Estate Industry  </a></h4>
+                        <p>We at Ryse Digital Solutions in Vijayawada use our knowledge of SEO for real estate websites to improve search engine ranks, produce high-quality leads, and guarantee your real estate company's success and maximum visibility.</p>
+                    </div>
+                    <div class="cardMast">
+                        <img src="./asserts/imagesRyse/carIconSeo6.png" alt="">
+                        <h4><a href="./SEOForTravells.html">Travel Website SEO  </a></h4>
+                        <p>By promoting online reservations, producing high-quality leads, boosting organic traffic, and enhancing search engine rankings, Ryse Digital Solutions in Vijayawada assists travel agencies in reaching their objectives. Establishing a powerful and significant internet presence in the travel industry is another goal of our tactics.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!---------------------------------------- Section For CSEO ------------------------------------>
+<style>
+    .inDivCSEO>h1{
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        font-size: 32px;
+        font-weight: 800;
+    }
+    .inDivCSEO>p{
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        font-size: 14px;
+        font-weight: 600;
+    }
+    .innerInDivCSEO{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .cardSCEO{
+            width: 22%;
+            text-align: center;
+            margin: 30px 0 30px 0;
+            transition: 0.6s ease all;
+            box-shadow: var(--bs);
+            max-height: 400px;
+            overflow-y: auto;
+            -ms-overflow-style: none; /* Hides scrollbar in Internet Explorer and Edge */
+            scrollbar-width: none; /* Hides scrollbar in Firefox */
+        }
+    .cardSCEO::-webkit-scrollbar {
+            display: none; /* Hides scrollbar */
+        }
+    .cardSCEO>h4{
+        margin: 30px 10px 30px 10px;
+        color: var(--c3);
+        font-size: 22px;
+    }
+    .cardSCEO>img{
+        width: 100%;
+        margin: 0;
+        transition: .6s ease all;
+    }
+    .cardSCEO>img:hover{
+        transform: scale(1.1);
+    }
+    .cardSCEO>p{
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    /***************************** For Mobile Responsive *****************************/
+    @media only screen and (max-width:480px){
+        .innerInDivCSEO{
+            display: grid;
+            grid-template-columns: 1fr;
+            margin-bottom: 30px;
+        }
+        .cardSCEO{
+            width: 100%;
+        }
+    }
+
+    /******************************* For Tab Responsive ********************************/
+    @media (min-width:500px) and (max-width:1024px){
+        .innerInDivCSEO{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            margin-bottom: 30px;
+            gap: 22px;
+        }
+        .cardSCEO{
+            width: 100%;
+        }
+    }
+</style>
+    <section class="secCSEO widget-section">
+        <div class="divCSEO container">
+            <div class="inDivCSEO">
+                <h1>Everything We Offer in Our All-Inclusive SEO Solutions?</h1>
+                <p>Our all-inclusive digital marketing services include a tailored strategy to achieve your business's goals. We provide on-page and off-page optimization, content production, thorough website analysis, keyword research, and frequent performance monitoring and reporting. You may anticipate a rise in organic traffic and your company's online visibility with Ryse Digital Solutions in Vijayawada.</p>
+                <div class="innerInDivCSEO">
+                    <div class="cardSCEO">
+                        <img src="./asserts/imagesRyse/SeocontentImg1.webp" alt="">
+                        <h4><a href="./SEOSiteAudite.html">Site Audit for SEO </a></h4>
+                        <p>Ryse Digital Solutions in Vijayawada offers SEO Site Audit services that include a thorough evaluation of your website's SEO performance. To find opportunities for improvement, our skilled team will examine technical, on-page, and off-page elements. To optimize your website and increase its visibility in search engines, we will develop a customized SEO strategy based on your objectives.</p>
+                    </div>
+                    <div class="cardSCEO">
+                        <img src="./asserts/imagesRyse/SeoKeywords2.webp" alt="">
+                        <h4><a href="./SEOKeywords.html">Research on SEO Keywords </a></h4>
+                        <p>Our knowledgeable staff at Ryse Digital Solutions in Vijayawada carefully chooses the most pertinent keywords depending on search traffic and competitiveness. We recognize how crucial it is to pick the ideal target keywords for your company. This tactical approach increases your website's organic traffic and guarantees higher presence on search engine results pages (SERPs).</p>
+                    </div>
+                    <div class="cardSCEO">
+                        <img src="./asserts/imagesRyse/SeoWeb2.webp" alt="">
+                        <h4><a href="./SEOTech.html">On-page and technical SEO optimization </a></h4>
+                        <p>We carefully optimize your website's SEO components at Ryse Digital Solutions in Vijayawada to increase relevancy and improve user experience. We concentrate on important elements like enhancing website structure, optimizing page load speeds, and making sure your website satisfies the highest requirements for customer happiness and search engine exposure.</p>
+                    </div>
+                    <div class="cardSCEO">
+                        <img src="./asserts/imagesRyse/contentWritingSeo4.jpg" alt="">
+                        <h4><a href="./SEOCopyWriter.html">Copywriting for SEO  </a></h4>
+                        <p>Our talented writers at Ryse Digital Solutions in Vijayawada create engaging and optimized content that draws visitors in, fosters trust, and lengthens their stay on your website. We guarantee enhanced conversion rates, more organic traffic, and higher search engine ranks by carefully incorporating pertinent keywords.</p>
+                    </div>
+                    <div class="cardSCEO">
+                        <img src="./asserts/imagesRyse/uiuximageSEO5.jpg" alt="">
+                        <h4><a href="./SEOUIUX.html">UI/UX Recommendations</a></h4>
+                        <p>Our main goals at Ryse Digital Solutions in Vijayawada are to decrease bounce rates, improve mobile responsiveness, and optimize loading times. By putting the user experience first, we make sure that our customers' websites get more visits and offer smooth, interesting interactions.</p>
+                    </div>
+                    <div class="cardSCEO">
+                        <img src="./asserts/imagesRyse/seoImage6Seo.jpg" alt="">
+                        <h4><a href="./SEOReporting.html">Reports on SEO  </a></h4>
+                        <p>Weekly reports from Ryse Digital Solutions in Vijayawada emphasize the week's work and include information on on-page optimization, backlink analysis, website traffic figures, and keyword ranking progress. These reports ensure transparency and continuous improvement by keeping you updated on the progress and performance of your SEO campaign.</p>
+                    </div>
+                    <div class="cardSCEO">
+                        <img src="./asserts/imagesRyse/contactImg6.jpg" alt="">
+                        <h4><a href="./SEODedicatedSupport.html">Committed Assistance  </a></h4>
+                        <p>Ryse Digital Solutions in Vijayawada takes pleasure in providing our customers with committed service. Our knowledgeable account managers are dedicated to comprehending your unique demands and offering solutions that are specifically designed to satisfy your company's requirements. We are always here to help and make sure your digital marketing objectives are successfully met.... Read More</p>
+                    </div>
+                    <div class="cardSCEO">
+                        <img src="./asserts/imagesRyse/SEOimageBackLinks.jpg" alt="">
+                        <h4><a href="">Management of SEO Backlinks  </a></h4>
+                        <p>Ryse Digital Solutions, located in Vijayawada, specializes in SEO Backlink Management to increase the organic traffic and exposure of your website. We help raise the search engine rankings of your website and increase targeted traffic by constructing high-quality backlinks from reliable sources. Our methodical methodology guarantees that your website acquires reputation, which improves search engine performance and promotes long-term growth.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  <!--------------------------------- Section For BOrdinary --------------------------------->
+<style>
+    .inDivBO{
+        display: flex;
+        justify-content: space-between;
+    }
+    .inDivBO>div{
+        width: 60%;
+    }
+    .inDivBO>div>h1{
+        font-size: 32px;
+        font-weight: 800;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    b{
+        font-size: 16px;
+        font-weight: 800;
+        color: var(--c3);
+    }
+    .inDivBO>div+div{
+        width: 30%;
+    }
+    .inDivBO>div+div>img{
+        width: 100%;
+    }
+    .innerDivBOC>p{
+        margin-bottom: 30px;
+        font-size: 14px;
+        font-weight: 500;
+    }
+    .inDivBO1{
+        max-height: 400px;
+        overflow-y: auto;
+        -ms-overflow-style: none; /* Hides scrollbar in Internet Explorer and Edge */
+        scrollbar-width: none; /* Hides scrollbar in Firefox */
+    }
+
+    /*************************** For Mobile Responsive ***********************************/
+    @media only screen and (max-width:480px){
+        .inDivBO {
+            display: flex;
+            flex-direction: column; /* Stack content with image below */
+            align-items: center;
+            width: 100%;
+            margin: 0;
+            /* padding: 10px; */
+        }
+        .inDivBO>div{
+            width: 100%;
+        }
+        .inDivBO>div+div{
+            width: 100%;
+        }
+        .inDivBO1 {
+            width: 100%;
+        }
+
+        .inDivBO img {
+            width: 100%; /* Adjust image width for mobile */
+            margin-top: 50px;
+        }
+        .innerDivBOC{
+            width: 100%;
+        }
+    }
+</style>
+  <section class="secBO widget-section">
+    <div class="divBO container">
+        <div class="inDivBO">
+            <div class="inDivBO1">
+                <h1>Above and Beyond: How We Vary from Other Vijayawada SEO Firms</h1>
+                <div class="innerDivBOC">
+                    <p><b>Mobile First SEO Strategy:</b> Given that 60–70% of website traffic originates from mobile devices, we understand how important it is to serve mobile clients. Our team of experts in Vijayawada carries out all-encompassing SEO strategies that give priority to mobile optimization, including enhancing user experience, speeding up loading times, optimizing key web components, and making necessary website adjustments. By optimizing for mobile, we can raise keyword ranks on mobile devices, draw in organic traffic, and ultimately enhance conversions on both desktop and mobile platforms.</p>
+                    <p><b>User Experience-Based SEO:</b> Our knowledgeable SEO consultants design and carry out campaigns with the needs of users in mind. We provide comprehensive information so that consumers can obtain perspective and generate well-informed opinions about your goods and services.</p>
+                    <p><b>Research & Development for SEO:</b>Our team is always informed about the latest developments in the Google algorithm and market trends. By adhering to the best SEO standards, we develop innovative strategies for our clients. In order to keep ahead of the competition and deliver outstanding results, we aim to be the leading SEO agency in Vijayawada.</p>
+                    <p><b>Robust SEO Team & Strategy: </b>With a dedicated team of SEO experts in Vijayawada, we create specific SEO strategies that include technical, on-page, and off-page optimization. Our entire plan includes content methods like creating pillar pages, producing blogs, optimizing online material, and creating long-form lessons. By using skilled content writers and developers, we guarantee quick execution and consistent delivery of excellent results.</p>
+                    <p><b>Link building and guest blogging:</b> It might be difficult to build high-quality backlinks for a website. In order to create links, we must locate authoritative and trustworthy websites. Building high-quality links is facilitated by guest blogging; we choose the website and get in touch with them to submit our material and build backlinks. We have a list of suggested off-page link-building activities in addition to guest blogging that can help you get high-domain-authority backlinks from portals or websites.</p>
+                    <p><b>Our Specialized SEO Procedure:</b> With more than 11 years of experience in the field, we are among the top SEO companies in Vijayawada. We have developed a special procedure for a range of digital marketing services, from strategy to execution, and we consistently produce outcomes. We provide a variety of digital marketing services to help you create goals, monitor your success each month, and adjust your action plan as needed to reach your objectives.</p>
+                    <p><b>Committed Support:</b> To assist each and every one of our clients, we have a layer of important account managers. It makes it easier for our clients to get in touch with our team whenever it suits them. Our staff will be informed of any conversations so that they may be incorporated into our SEO procedure. We are committed to offering our clients individualized support. Our key account managers are on hand at all times to answer your questions, provide you updates, and help you with the SEO process. We work hard to create enduring relationships and make sure you're satisfied at every stage.</p>
+                    <p>We are the top SEO companies in India, providing expert SEO services in Vijayawada that include content marketing, internal linking, user experience optimization, website relevancy enhancement, and high-quality link development. From planning to reporting, our method is open and honest, and we notify our clients of any minor adjustments or advancements made to their websites. To assess the effectiveness of the SEO plan, we also look at important performance metrics including organic traffic, keyword ranking, and organic leads/conversions.</p>
+                </div>
+            </div>
+            <div>
+                <img src="./asserts/imagesRyse/SEOMainImage.jpg" alt="">
+            </div>
+        </div>
+
+    </div>
+  </section>
+
+  <!------------------------------------------ Section SEOPP ------------------------------------------->
+
+  <style>
+    .secSEOPP{
+        width: 100%;
+        height: auto;
+        display: block;
+        position: relative;
+    }
+    .divSEOPP{
+        width: 100%;
+        background-image: url("asserts/imagesRyse/bannerPricingPackages.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+   
+    .inDivSEOPP {
+        display: flex;
+        justify-content: flex-start; /* Align content to the left */
+        align-items: center;
+        padding: 20px; /* Add padding to avoid text touching the edge */
+    }
+
+    .inDivSEOPP > div {
+        width: 50%;
+        max-width: 600px; /* Limit width for better readability on large screens */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 100px 50px;
+    }
+    .inDivSEOPP>div>h1{
+        margin-bottom: 30px;
+        font-size: 32px;
+        font-weight: 800;
+    }
+    .inDivSEOPP>div>p{
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    /************************************** For Mobile Responsive *****************************************/
+    @media only screen and (max-width:480px){
+        .divSEOPP{
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+        }
+        .inDivSEOPP{
+            width: 100%;
+        }
+        .inDivSEOPP>div{
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+    }
+    /***************************************** For Tab Responsive ****************************************************/
+    @media (min-width:500px) and (max-width:1024px){
+        .divSEOPP{
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+        }
+        .inDivSEOPP{
+            width: 100%;
+        }
+        .inDivSEOPP>div{
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+    }
+  </style>
+  <section class="secSEOPP">
+    <div class="divSEOPP">
+        <div class="inDivSEOPP">
+            <div>
+                <div>
+                    <h1>Pricing & Packages for SEO </h1>
+                    <p>Ryse Digital Solutions offers specialized SEO packages and rates that are made to fit the unique requirements and financial constraints of every company. Together, our committed team of experts—which consists of an SEO strategist, link building specialist, SEO copywriter, and developer—completes the assigned tasks and produces the intended results. We are committed to providing individualized SEO solutions that complement the goals of your business. To discuss your specific needs and receive an estimate for our full-service SEO services in Vijayawada, get in touch with our Digital Marketing Experts right now for a free SEO consultation.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+  
+  <!--------------------------------------- Section For Carousel ---------------------------------------------->
+  <style>
+    .secSC{
+        width: 100%;
+        height: auto;
+        display: block;
+        position: relative;
+    }
+    .divSC{
+        background-image: url("asserts/imagesRyse/banner-6.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 85vh;
+    }
+    .inDivSC{
+        width: 100%;
+    }
+    .inDivSC h1{
+        width: 100%;
+        text-align: center;
+        padding-top: 60px;
+        font-size: 35px;
+        font-weight: 400;
+        color: var(--c1);
+        font-family: "League Spartan", sans-serif;
+    }
+    .carousel {
+        background: transparent;
+        width: 60%;
+        height: 50vh ;
+        text-align: center;
+        margin-left: 300px;
+        margin-top: 100px;
+    }
+
+    .carousel-cell {
+        width: 66%;
+        height: 100%;
+        margin-right: 10px;
+        background: transparent;
+        border-radius: 5px;
+        counter-increment: gallery-cell;
+        color: var(--c1);
+    }
+    .inCarousel h3{
+        color: var(--c1);
+        margin-top: 20px;
+    }
+    .carousel-cell img{
+        width: 150px;
+    }
+    .carousel-cell p{
+        font-size: 10px;
+        line-height: 20px;
+        margin-top: 20px;
+    }
+    .carousel-cell>img+p{
+        color: var(--c1);
+    }
+    .inCarousel>p{
+        color: var(--c1);
+    }
+
+    /* cell number */
+    .carousel-cell:before {
+        display: block;
+        text-align: center;
+        /* content: counter(gallery-cell); */
+        line-height: 200px;
+        font-size: 80px;
+        height: auto;
+        color: white;
+        /* margin-top: 40px; */
+    }
+
+    /********************** For Mobile Responsive *******************************/
+    @media only screen and (max-width:480px){
+        .carousel{
+            margin: 0;
+            margin-top: 20px;
+            width: 100%;
+            height: 65vh !important;
+        }
+    }
+     /**************************** For Tab Responsive  **********************************/
+     @media (min-width:500px) and (max-width:1024px){
+            .carousel{
+                margin: 0;
+                margin-top: 100px;
+                width: 100%;
+                height: 35vh;
+            }
+        }
+</style>
+<section class="secSC">
+    <div class="divSC">
+        <div class="inDivSC">
+            <h1>What Our Client Says</h1>
+            <!-- Flickity HTML init -->
+            <div class="carousel" data-flickity='{ "autoPlay": true }'>
+                <div class="carousel-cell">
+                        <img src="./asserts/imagesRyse/SoecLogo.jpg" alt="">
+                        <p>We are really pleased with the way Ryse Digital Solutions boosted our online visibility. Their staff is committed and collaborated with ours to comprehend our needs and target market. Fantastic work all around!
+                        </p>
+                        <div class="inCarousel">
+                            <h3>RJESH</h3>
+                            <p>SOEC MANAGER</p>
+                        </div>
+                </div>
+                <div class="carousel-cell">
+                    <img src="./asserts/imagesRyse/BindhuLogo.jpg" alt="">
+                    <p>Our satisfaction with Ryse Digital Solutions' assistance in expanding our online visibility is quite high. To better understand our needs and target audience, their team collaborated with ours and is committed. Excellent work all around!
+                    </p>
+                    <div class="inCarousel">
+                        <h3>Dr. Hima Bindhu </h3>
+                        <p>Dermatologist Doctor, Dr. Bindhus Cosmetic Skin and Laser Clinic</p>
+                    </div>
+                </div>
+                <div class="carousel-cell">
+                    <img src="./asserts/imagesRyse/WplLogo.jpg" alt="">
+                    <p>We are thrilled that Ryse Digital Solutions was able to help us expand our online visibility. With great dedication, their team collaborated with ours to comprehend our needs and target market. Outstanding work all around!
+                    </p>
+                    <div class="inCarousel">
+                        <h3>Max</h3>
+                        <p>Manager, Whiz Prep Lab</p>
+                    </div>
+                </div>
+                <div class="carousel-cell">
+                    <img src="./asserts/imagesRyse/JaimaxLogo.jpg" alt="">
+                    <p>We are thrilled with the way Ryse Digital Solutions boosted our online visibility. Their staff is committed and collaborated with ours to comprehend our needs and target market. Amazing work all around!
+                    </p>
+                    <div class="inCarousel">
+                        <h3>Amar</h3>
+                        <p>Head Of JaiMax Coin, JaiMax Coin</p>
+                    </div>
+                </div>
+                <div class="carousel-cell">
+                    <img src="./asserts/imagesRyse/VijayaaLogo.jpg" alt="">
+                    <p>The team at Ryse Digital Solutions is dynamic, knowledgeable, and quick to provide content writing services. In addition to producing flawless content for Vijayaa Sandalwood Projects, the crew has been very attentive to our questions and concerns and has been quite personable. They have demonstrated exceptional efficiency in comprehending the nature of the assignment and producing pertinent content within the allotted time frames. We are thrilled to be connected with Ryse Digital Solutions and eager to collaborate with them going forward.
+                    </p>
+                    <div class="inCarousel">
+                        <h3>Murali Krishna</h3>
+                        <p>Growth & Product Manager, Vijayaa Sandalwood Projects</p>
+                    </div>
+                </div>                
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--------------------------------------------- Section For Our Services ----------------------------------------->
+<style>
+    .secOS{
+        background-color: #EEF6F7;
+        width: 100%;
+    }
+    .divOS>h1{
+        font-size: 32px;
+        font-weight: 600;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .divOS>p{
+        font-size: 14px;
+        font-weight: 800;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .cardOS{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); /* 2 columns */
+            gap: 20px;
+            justify-content: center;
+            margin-top: 30px;
+        }
+        .inCardOS{
+            width: 100%;
+            margin-top: 30px;
+            text-align: center;
+            box-shadow: var(--bs);
+            border-radius: 10px;
+            background-color: rgb(255 255 255 / 10%);
+            transition: .3s all;
+        }
+        .inCardOS:hover{
+            transform: scale(1.03);
+            box-shadow: var(--bs);
+            text-decoration: underline gold;
+        }
+        .inCardOS>a{
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .inCardOS>a>img{
+            margin:20px 0;
+            width: 20%;
+        }
+        .inCardOS>a>h1{
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            font-size: 20px
+        }
+
+        /*********************************** For Mobile Responsive *******************************************/
+        @media only screen and (max-width:480px){
+            .cardOS{
+                grid-template-columns: 1fr;
+            }
+        }
+</style>
+<section class="secOS widget-section">
+    <div class="divOS container">
+        <h1>Our Offerings</h1>
+        <p>Utilize Ryse Digital Solutions' All-Inclusive Services to Revolutionize Your Online Presence. We provide a broad selection of effective digital marketing solutions in Vijayawada that are customized to meet your particular business requirements.</p>
+        <div class="cardOS">
+            <div class="inCardOS">
+                <a href="./SEO.html">
+                    <img src="./asserts/imagesRyse/SEOIconServices.png" alt="">
+                    <h1>Optimization of Search Engines (SEO)</h1>
+                </a>
+            </div>
+            <div class="inCardOS">
+                <a href="./PPC.html">
+                    <img src="./asserts/imagesRyse/PPCIconServices2.png" alt="">
+                    <h1>Advertising Pay Per Click (PPC)</h1>
+                </a>
+            </div>
+            <div class="inCardOS">
+                <a href="./ORM.html">
+                    <img src="./asserts/imagesRyse/ORMIconServices3.png" alt="">
+                    <h1>Management of Online Reputation (ORM)</h1>
+                </a>
+            </div>
+            <div class="inCardOS">
+                <a href="./SMM.html">
+                    <img src="./asserts/imagesRyse/SMMIconServices4.png" alt="">
+                    <h1>Management of Social Media (SMM)</h1>
+                </a>
+            </div>
+            <div class="inCardOS">
+                <a href="./ContentWriting.html">
+                    <img src="./asserts/imagesRyse/CopyWriteIconServices5.png" alt="">
+                    <h1>Copywriting for Content</h1>
+                </a>
+            </div>
+            <div class="inCardOS">
+                <a href="">
+                    <img src="./asserts/imagesRyse/UIUXIconServices6.png" alt="">
+                    <h1>Design of UI/UX</h1>
+                </a>
+            </div>
+            <div class="inCardOS">
+                <a href="./WebDesigning.html">
+                    <img src="./asserts/imagesRyse/WebCodingIconServices7.png" alt="">
+                    <h1>Development of Web Pages</h1>
+                </a>
+            </div>
+    </div>
+</section>
+    <!------------------------------------------------- Section for FAQ's ---------------------------------------------------->
+    <style>
+        .secFAQ1{
+            margin-top: 50px;
+            width: 100%;
+            height: auto;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .inDivFAQ1 h1{
+            text-align: center;
+            color: var(--c3);
+            font-size: 36px;
+            font-weight: 400;
+            margin-bottom: 20px;
+        }
+        .collapsible {
+            border: 1px solid var(--c3);
+            background-color: transparent;
+            color: var(--c3);
+            font-family: var(--ff2);
+            font-size: 16px;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            text-align: left;
+            outline: none;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .active, .collapsible:hover {
+                background-color: transparent;
+        }
+
+        .content {
+                padding: 0 18px;
+                display: none;
+                overflow: hidden;
+                color: var(--c4);
+                background-color: transparent;
+                margin-bottom: 20px;
+                text-align: justify;
+        }
+    </style>
+    <section class="secFAQ1">
+        <div class="divFAQ1 widget-section">
+            <div class="inDivFAQ1 container">
+                <h1>Commonly Asked Questions</h1>
+                <button type="button" class="collapsible">How can SEO help my business? What is it?    <i class="fa-solid fa-plus"></i></button>
+                <div class="content">
+                    <p>The process of increasing a website's pages' visibility and relevancy for specific business keywords in order to raise its positions on search engine results pages (SERPs) is known as SEO, or search engine optimization. Businesses may see an increase in organic traffic, leads, and sales by ranking higher on search engine results pages. Ryse Digital Solutions, a leading SEO firm in Vijayawada, offers ROI-focused SEO services to assist companies in reaching their objectives for online expansion.</p>
+                </div>
+                <button type="button" class="collapsible">Why should companies think about using SEO services?  <i class="fa-solid fa-plus"></i></button>
+                <div class="content">
+                    <p>In addition to other digital marketing services offered by Ryse Digital Solutions in Vijayawada, businesses looking to expand, boost sales, and raise their online presence should think about utilizing SEO services.</p>
+                </div>
+                <button type="button" class="collapsible">Are there any SEO campaign best practices you may recommend?  <i class="fa-solid fa-plus"></i></button>
+                <div class="content">
+                    <p>The following are some excellent practices that can improve the outcomes of SEO campaigns:</p>
+                    <ul style="list-style: disc;">
+                    	<li>Selecting the appropriate target keywords and optimization pages</li>
+                    	<li>Delivering a flawless user experience on websites, particularly for mobile users</li>
+                    	<li>Prioritizing mobile-first optimization to accommodate the bulk of users</li>
+                    	<li>Making sure desktop and mobile devices load quickly</li>
+                    	<li>Developing original and captivating content for users</li>
+                    	<li>Adding internal connections to enhance the inter-page link juice</li>
+                    	<li>Putting money into content marketing initiatives</li>
+                    	<li>Constructing links of superior quality to raise domain authority.</li>
+                    </ul>
+                </div>
+                <button type="button" class="collapsible">How significant are SEO services?  <i class="fa-solid fa-plus"></i></button>
+                <div class="content">
+                    <p>Any company that want to move its marketing budget toward digital marketing must invest in SEO services. It enables you to increase the quality of organic traffic to your website, which is typically greater than that of users from paid campaigns. Even while SEO takes time, it can improve your company's ROI and results. The quality of traffic is typically poorer than with paid advertising, where you must continuously spend money for immediate visibility.</p>
+                </div>
+                <button type="button" class="collapsible">What do white label SEO services mean?  <i class="fa-solid fa-plus"></i></button>
+                <div class="content">
+                    <p>White label SEO services include using optimal SEO practices, which Google trusts and recommends, together with the newest Off-Page and On-Page strategies. Ryse Digital Solutions, a top SEO firm in Vijayawada, focuses on offering white label SEO services.</p>
+                </div>
+                <button type="button" class="collapsible">SEO copywriting services: what are they?  <i class="fa-solid fa-plus"></i></button>
+                <div class="content">
+                    <p>The practice of producing excellent, captivating material that is search engine optimized is referred to as SEO copywriting services. This entails adding the desired keywords to the article while keeping it engaging for the reader and flowing naturally. Enhancing the website's position on search engine results pages and increasing website traffic are the two main objectives of SEO copywriting. In addition to our normal SEO services, Ryse Digital Solutions, a leading SEO firm in Vijayawada, provides a variety of services, such as SEO copywriting.</p>
+                </div>
+                <button type="button" class="collapsible">What are some crucial elements to take into account while selecting an SEO company?  <i class="fa-solid fa-plus"></i></button>
+                <div class="content">
+                    <p>There are a number of things to consider while choosing an SEO agency. These include of the agency's success rate, pricing and services offered, communication and reporting strategies, and experience and expertise. Finding an agency that has a history of improving their clients' search engine rankings and producing quantifiable outcomes is crucial. Ryse Digital Solutions, a Vijayawada-based company that specializes in all of these areas, will make sure that your company uses efficient SEO tactics to reach its full potential in terms of visibility and growth.</p>
+                </div>
+                <button type="button" class="collapsible">Which Vijayawada SEO firm is the best?  <i class="fa-solid fa-plus"></i></button>
+                <div class="content">
+                    <p>One of the top SEO firms in Vijayawada, India, Ryse Digital Solutions offers a variety of SEO services catered to the particular requirements of companies. In addition to keyword research, website optimization, mobile-first SEO, content marketing, internal linking, link building, and much more, our team of professionals provides performance-based and reasonably priced SEO services. To provide our clients with the greatest outcomes, we constantly track the most recent changes to the Google algorithm and hone our SEO approach. We have established ourselves as one of the top SEO firms in Vijayawada because to our open and honest business practices and dedication to quality.</p>
+                </div>
+                <button type="button" class="collapsible">What effects will machine learning and artificial intelligence (AI) have on SEO in 2023?  <i class="fa-solid fa-plus"></i></button>
+                <div class="content">
+                    <p>In 2023, it is anticipated that machine learning and artificial intelligence (AI) will significantly affect SEO. RankBrain, Google's AI system, analyzes user experience metrics including click-through rate, average time on site, page views, and dwell time to determine SERP results. SEO tactics will need to change as AI and machine learning continue to advance in order to stay up with shifting user trends and algorithmic changes. To stay ahead of the competition, Ryse Digital Solutions' SEO specialists in Vijayawada must keep up with the most recent developments in AI and machine intelligence.</p>
+                </div>
+                <button type="button" class="collapsible">Why is high-quality content so important for SEO outcomes?  <i class="fa-solid fa-plus"></i></button>
+                <div class="content">
+                    <p>In 2023, having high-quality content is more important than ever for getting the best SEO results. Expertise, authority, and trustworthiness are some of the criteria that search engines, especially Google, use to assess the quality of material. The target audience is informed and engaged by high-quality material, which also helps position your company as a thought leader in your sector. By giving consumers comprehensive, in-depth information, long-form guides are a particularly successful content marketing tactic for drawing in larger target audiences. At Vijayawada's Ryse Digital Solutions, we specialize in SEO copywriting services that assist companies in producing excellent, captivating content that appeals to their target market and raises their search engine rankings. To find out more about our SEO services, get in touch with us right now.</p>
+                </div>
+                <button type="button" class="collapsible">What is the organic SEO service offered by Ryse Digital Solutions?  <i class="fa-solid fa-plus"></i></button>
+                <div class="content">
+                    <p>Ranking your website for target keywords in the non-paid area of Google search engine results pages (SERP) is possible with organic SEO. In contrast to paid advertising, organic SEO entails improving your website's exposure and rating using best practices like keyword research, content production, link building, and website optimization. Our specialty at Ryse Digital Solutions in Vijayawada is offering organic SEO services that support the online expansion of companies of all sizes. To find out more about our SEO services and how we can raise your company's organic search engine ranking, get in touch with us right now.</p>
+                </div>
+                <button type="button" class="collapsible">Why should I think about working with Ryse Digital Solutions as my SEO company?  <i class="fa-solid fa-plus"></i></button>
+                <div class="content">
+                    <p>One of the top SEO companies in Vijayawada, Ryse Digital Solutions, has the know-how and experience to search engine optimize your website. To increase your website's exposure and rating in search engine results pages, we provide a variety of SEO services, such as keyword research, content production, link building, and website optimization. You may anticipate receiving individualized, efficient SEO solutions that are catered to your company's requirements when you work with Ryse Digital Solutions as your SEO agency. To discuss your needs and find out more about our SEO services, get in touch with us right now.</p>
+                </div>
+                <button type="button" class="collapsible">In what ways might an SEO company help with mobile optimization?  <i class="fa-solid fa-plus"></i></button>
+                <div class="content">
+                    <p>In 2023, making your website mobile-friendly is essential. A trustworthy SEO company may assist by making sure your website is responsive, meaning it works and looks fantastic on mobile devices. Additionally, they may optimize your website's content and visuals to guarantee quick mobile device loads and a seamless mobile user experience. Mobile optimization is one of the full range of SEO services that Ryse Digital Solutions provides in Vijayawada. In order to guarantee that your target audience can access your material at any time and from any location, our team of professionals will collaborate with you to optimize your website for all devices.</p>
+                </div>
+                <button type="button" class="collapsible">How long does it take for SEO services to start producing results?  <i class="fa-solid fa-plus"></i></button>
+                <div class="content">
+                    <p>The competitiveness of your industry, the caliber of your website, and the time and money you are prepared to spend are some of the variables that might affect how long it takes to get results from SEO services. Significant increases in your website's traffic and ranking typically take several months to manifest, but with consistent optimization work, you can see gains over time. Our goal at Ryse Digital Solutions, a Vijayawada-based company, is to provide long-lasting SEO solutions that raise the exposure and functionality of your website over time.</p>
+                </div>
+                <button type="button" class="collapsible">Which SEO ranking elements are crucial to take into account in 2023?  <i class="fa-solid fa-plus"></i></button>
+                <div class="content">
+                    <p>Mobile optimization, content production and optimization, voice search optimization, user experience optimization, and E-A-T optimization are some crucial SEO ranking elements to take into account for 2023. These services, which raise your website's position in search engine results pages, can be offered by a respectable SEO company like Ryse Digital Solutions, situated in Vijayawada.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+          <!--------------------------- Section For Blog ----------------------------->
+
+          <style>
+            .inDivBlog{
+                width: 100%;
+            }
+            .inDivBlog h1{
+                text-align: center;
+                font-size: 36px;
+                font-weight: 500;
+                margin-bottom: 60px;
+                color: var(--c3);
+            }
+            .innerDivBlog{
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+            }
+            .inCardDiv{
+                width: 30%;
+                box-shadow: var(--bs);
+                overflow: hidden;
+            }
+            .inCardDiv img{
+                width: 100%;
+                display: inline-block;
+                transition: transform 1s;
+                margin-bottom: 30px;
+            }
+            .inCardDiv img:hover{
+                transform: scale(1.1) rotate(3deg);  
+                cursor: pointer;
+            }
+            .innerCardDiv{
+                padding: 16px 22px;
+            }
+            .innerCardDiv h4{
+                text-align: center;
+                font-weight: 500;
+                font-size: 25px;
+                margin-bottom: 25px;
+                color: var(--c3);
+            }
+            .innerCardDiv h4:hover{
+                color: #48AD01;
+            }
+            .innerCardDiv p{
+                font-size: 14px;
+                color: var(--c4);
+                margin-bottom: 20px;
+                text-align: justify;
+            }
+            .innerCardDiv .aPara{
+                height: 40px;
+                width: 50%;
+                display: flex;
+                justify-content: center; /* Centers text horizontally */
+                align-items: center;
+                text-align: center;
+                text-transform: uppercase;
+                margin: 0 auto;
+                color: #fff;
+                background: var(--bgLinG);
+                font-size: 16px;
+                font-weight: 500;
+                transition: .6s ease all;
+            }
+            .innerCardDiv .aPara:hover{
+                transform: scale(1.1);
+            }
+    
+            /************************ For Mobile Responsive ****************************************/
+            @media only screen and (max-width:480px){
+                .innerDivBlog{
+                    width: 100%;
+                    display: grid;
+                }
+                .inCardDiv{
+                    width: 100%;
+                    margin-bottom: 30px;
+                }
+            }
+    
+            /************************************** For Tab Responsive *******************************/
+            @media (min-width:500px) and (max-width:1024px){
+                .innerDivBlog{
+                    width: 100%;
+                    display: grid;
+                }
+                .inCardDiv{
+                    width: 100%;
+                    margin-bottom: 30px;
+                }
+            }
+        </style>
+        <section class="secBlog widget-section">
+            <div class="divBlog container">
+                <div class="inDivBlog">
+                    <h1>Recent SEO Blogs</h1>
+                    <div class="innerDivBlog">
+                        <div class="inCardDiv">
+                            <img src="./asserts/imagesRyse/blog6_img.png" alt="">
+                            <div class="innerCardDiv">
+                                <h4><a href="./SMMBlog3.html">🚀 Unlock Explosive Growth with Facebook Pixel: A Game-Changer for Your Business!</a></h4>
+                                <p>Facebook Pixel has become a game-changer for businesses looking for creative methods to optimize their online marketing campaigns in the ever-changing digital marketplace.</p>
+                                <p class="aPara"><a href="./SMMBlog3.html">Read More</a></p>
+                            </div>
+                        </div>
+                        <div class="inCardDiv">
+                            <img src="./asserts/imagesRyse/blog7_img.png" alt="">
+                            <div class="innerCardDiv">
+                                <h4><a href="./SMMBlog4.html">🚀 Boosting Business: Mastering Facebook Ads for 🎯 Powerful Lead Generation</a></h4>
+                                <p>Businesses are depending more and more on online platforms in the current digital era to broaden their customer base, create leads, and spur expansion. Facebook ads are one of the most effective vehicles for this, and they have changed the game.</p>
+                                <p class="aPara"><a href="./SMMBlog4.html">Read More</a></p>
+                            </div>
+                        </div>
+                        <div class="inCardDiv">
+                            <img src="./asserts/imagesRyse/blog8_img.png" alt="">
+                            <div class="innerCardDiv">
+                                <h4><a href="./DMBlog3.html">🚀 Boost Your Practice! 🏥 Vijayawada's Premier Digital Marketing Services for Medical Professionals 💻✨</a></h4>
+                                <p>Healthcare professionals in Vijayawada stand to gain a great deal from having a strong online presence in the digital-first world of today. An effective digital marketing plan is essential for physicians</p>
+                                <p class="aPara"><a href="./DMBlog3.html">Read More</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <!------------------------------------ We love to hear more about -------------------------------------->
+        <style>
+            .secWLT{
+                background-color: #EAEBED;
+            }
+            .inDivWLT>div{
+                display: flex;
+                gap: 22px;
+                justify-content: center
+            }
+            .inDivWLT>div>p{
+                border: 1px solid;
+                border-radius: 50px;
+                text-align: center;
+                width: 20%;
+                height: 50px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 20px;
+                font-weight: 600;
+            }
+            .inDivWLT>div+h1{
+                margin-top: 50px;
+                font-size: 36px;
+                font-weight: 800;
+                text-align: center;
+            }
+            .getS{
+                display: flex;
+                justify-content: center;
+                align-items: center; /* Centers the text vertically */
+                margin: 150px auto; /* Centers the box within the container */
+                width: 30%;
+                cursor: pointer;
+                margin-top: 70px;
+            }
+            .getS img{
+                width: 100%;
+            }
+    
+            /*************************** For Mobile Responsive *************************************/
+            @media only screen and (max-width:480px){
+                .inDivWLT>div>p{
+                    border: 1px solid;
+                    border-radius: 50px;
+                    text-align: center;
+                    width: 100%;
+                    height: 50px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 20px;
+                    font-weight: 600;
+                }
+                .getS{
+                    margin-top: 40px;
+                }
+            }
+            /******************************** For Tab Responsive ******************************************/
+            @media (min-width:500px) and (max-width:1024px){
+                .getS{
+                    margin-top: 40px;
+                }
+            }
+        </style>
+        <section class="secWLT">
+            <div class="divWLT widget-section">
+                <div class="inDivWLT container">
+                    <div>
+                        <p><a href="http://127.0.0.1:5500/Career.html">Work With Us</a></p>
+                    </div>
+                    <h1>We would love to hear more about your project</h1>
+                    <div class="getS">
+                        <img src="./asserts/imagesRyse/get-started-img.png" class="open-form-trigger" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+         <!---------------------------------------- Section for Map ------------------------------------------------>
+         <style>
+            .secMap{
+                width: 100%;
+                height: auto;
+            }
+            .divMap iframe{
+                width: 100%;
+                vertical-align: middle;
+            }
+        </style>
+        <section class="secMap">
+            <div class="divMap">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3825.5765062088067!2d80.64508140000001!3d16.496967899999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a35edb86fbc3dc5%3A0xec6e652b88304467!2sRyse%20Digital%20Solutions%20-%20Best%20Digital%20Marketing%20Agency%20In%20Vijayawada!5e0!3m2!1sen!2sin!4v1730707430240!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+    
+        <!--------------------------------------------------- Footer Part ------------------------------------------------>
+        <style>
+       
+        </style>
+        <footer class="secFoot">
+            <div class="divFoot widget-section">
+                <div class="inDivFoot container">
+                    <div class="innerInDivImg">
+                        <a href="./index.html"><img src="./asserts/imagesRyse/logo.png" alt=""></a>
+                    </div>
+                    <div class="innerInDivContent1">
+                        <div><a href="./AboutUs.html">About Us</a></div>
+                        <div>
+                            <p>Our Services</p>
+                            <ul>
+                                <li>
+                                    <a href="">Digital Marketing</a>
+                                </li>
+                                <li>
+                                    <a href="./SEO.html">Search Engine Optimization</a>
+                                </li>
+                                <li>
+                                    <a href="./PPC.html">PPC Advertising</a>
+                                </li>
+                                <li>
+                                    <a href="./SMM.html">Social Media Marketing</a>
+                                </li>
+                                <li>
+                                    <a href="./ORM.html">Online Reputation Management</a>
+                                </li>
+                                <li>
+                                    <a href="./ContentWriting.html">Content Copywriting</a>
+                                </li>
+                                <li>
+                                    <a href="./WebDesigning.html">Web Design & Development</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="innerInDivContent2">
+                        <div>
+                            <p>Resources</p>
+                            <div>
+                                <ul>
+                                    <li>
+                                        <a href="./Blog.html">Blog</a>
+                                    </li>
+                                    <li>
+                                        <a href="./Testimonials.html">Testimonials</a>
+                                    </li>
+                                    <li>
+                                        <a href="./Career.html">Career</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div>
+                            <p>Reach Us @</p>
+                            <ul>
+                                <li>
+                                    Reach us at <a href="">info@rysedigital.in</a>
+                                </li>
+                                <li>
+                                    Phone: <a href="">+91-738-6050-188</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p>FOLLOW US</p>
+                            <ul>
+                                <li><a href="https://www.facebook.com/RyseDigitalSolutions"><i class="fa-brands fa-facebook"></i></a></li>
+                                <li><a href="https://www.instagram.com/ryse_digital__?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="fa-brands fa-instagram"></i></a></li>
+                                <li><a href="https://www.linkedin.com/in/digital-ryse-a55a01338?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B0ljkHgWaSRexPVwPXRbISA%3D%3D"><i class="fa-brands fa-linkedin"></i></a></li>
+                                <li><a href="https://www.youtube.com/@rysedigital-host"><i class="fa-brands fa-youtube"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="innerInDivContent3">
+                        <div>
+                            <p class="conPara"><a href="./Contact.html">Contact Us</a></p>
+                        </div>
+                        <div>
+                            <p>Ryse Digital Solutions 40-15-8/3, 3rd floor, Sindhu Towers, Nandamuri rd, Sriram Nagar, Benz Circle, Vijayawada – 520010.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="footBot">
+                    <p>Copyright © 2024. Ryse Digital Solutions Pvt.Ltd</p>
+                </div>
+            </div>
+        </footer>
+     <!-------------------------------- Script Code --------------------------------------->
+
+     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+     <script src="https://npmcdn.com/flickity@2/dist/flickity.pkgd.js"></script>
+ 
+     <script>
+         function openNav(){
+             if((window.innerWidth >=500) && (window.innerWidth <=1024)){
+                 document.getElementById("mySidebar").style.width="75%";
+                 document.querySelector(".divMTLogo").style.display = "none";
+             }else{
+                 document.getElementById("mySidebar").style.width = "100%";
+             }
+         }
+         
+         function closeNav() {
+           document.getElementById("mySidebar").style.width = "0";
+           document.querySelector(".divMTLogo").style.display = "block";
+           document.querySelector(".divMTLogo").style.transition = ".6s all ease"
+         }
+ 
+         var coll = document.getElementsByClassName("collapsible");
+             var i;
+ 
+             for (i = 0; i < coll.length; i++) {
+             coll[i].addEventListener("click", function() {
+                 this.classList.toggle("active");
+                 var content = this.nextElementSibling;
+                 if (content.style.display === "block") {
+                 content.style.display = "none";
+                 } else {
+                 content.style.display = "block";
+                 }
+             });
+             }
+             function openForm() {
+                 document.getElementById("myForm").style.display = "flex"; // Display the form in the center
+                 document.body.style.backgroundColor = "#333"; // Darken the background color
+                 document.querySelector(".open-button").style.display = "none";
+             }
+ 
+             function closeForm() {
+                 document.getElementById("myForm").style.display = "none";
+                 document.body.style.backgroundColor = ""; // Reset the background color
+                 document.querySelector(".open-button").style.display = "block";
+             }
+             document.querySelectorAll('.open-form-trigger').forEach(button => {
+                 button.addEventListener('click', function(event) {
+                     event.preventDefault(); // Prevent default link behavior
+                     openForm();
+                 });
+             });
+             document.addEventListener("DOMContentLoaded", function() {
+                 document.getElementById("myForm").style.display = "none";
+             });
+         </script>
+</body>
+</html>

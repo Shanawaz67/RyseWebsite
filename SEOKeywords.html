@@ -1,0 +1,1249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEO Keywords</title>
+    <link rel="shortcut icon" href="./asserts/imagesRyse/logo.png" type="image/x-icon">
+    <!------------------------------ CSS Links --------------------------------------->
+    <link rel="stylesheet" href="https://npmcdn.com/flickity@2/dist/flickity.css">
+
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="stylesheet" type="text/css" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/all.css">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poller+One&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Itim&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Itim&family=Niramit:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-------------------------------------------------- Ryse Header --------------------------------------------------------->
+    <header class="ryseHead">
+        <nav class="ryseHeadNav">
+            <div class="ryseHeadDiv sidebar" id="mySidebar">
+                <span><button class="closeBtn" onclick="closeNav()"><i class="fa-solid fa-xmark"></i></button></span>
+                <div class="ryseLogo">
+                    <a href="./index.html"><img src="./asserts/imagesRyse/logo.png" alt="RyseLogo" title="Ryse Logo"></a>
+                </div>
+                <div class="ryseLinks">
+                    <ul class="ulRyseLinks">
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./AboutUs.html">About</a></li>
+                        <li class="dropDown">
+                            <button class="dropBtn">Services <i class="fa-solid fa-angle-down dA"></i></button>
+                            <div class="divDropDownContent">
+                                <ul class="ulDropDownContent">
+                                    <li><a href="./SEO.html"><i class="fa-solid fa-chevrons-right"></i> Search Engine Optimization (SEO)</a></li>
+                                    <li><a href="./PPC.html"><i class="fa-solid fa-chevrons-right"></i> Pay Per Click Advertising (PPC) </a></li>
+                                    <li><a href="./ORM.html"><i class="fa-solid fa-chevrons-right"></i> Online Reputation Management (ORM)</a></li>
+                                    <li><a href="./SMM.html"><i class="fa-solid fa-chevrons-right"></i> Social Media Management (SMM)</a></li>
+                                    <li><a href="./ContentWriting.html"><i class="fa-solid fa-chevrons-right"></i> Content Copywriting</a></li>
+                                    <li><a href="./WebDesigning.html"><i class="fa-solid fa-chevrons-right"></i> Web Design & Development</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="dropDown">
+                            <button class="dropBtn">Resources <i class="fa-solid fa-angle-down dA"></i></button>
+                            <div class="divDropDownContent">
+                                <ul class="ulDropDownContent">
+                                    <li><a href="./Blog.html"><i class="fa-solid fa-chevrons-right"></i> Blog</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="./Testimonials.html">Testimonials</a></li>
+                        <li><a href="./Career.html">Career</a></li>
+                        <li><a href="./Contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="ryseLetTalk"><a href="" class="open-form-trigger">Let's Talk</a></div>
+            </div>
+            <div class="divMTLogo">
+                <a href="./index.html"><img src="./asserts/imagesRyse/logo.png" alt="RyseLogo" title="Ryse Logo"></a>
+            </div>
+        </nav>
+        <span><button class="openBtn" onclick="openNav()"><i class="fa-solid fa-bars"></i></button></span>
+    </header>
+
+    <!------------------------------ Section For Banner SEO Audit ---------------------------------->
+    <style>
+        .secSEOAudit{
+            width: 100%;
+            height: auto;
+            
+        }
+        .divSEOAudit{
+            width: 100%;
+            height: 90vh;
+            background-image: url("asserts/imagesRyse/banners1Seo.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-color: var(--c1);
+            display: flex;
+            /* justify-content: flex-start; Centers horizontally */
+            align-items: center;    /* Centers vertically */
+        }
+        .inDivSEOAudit {
+            width: 40%; /* Adjusted to create some space on the right */
+            display: flex;
+            justify-content: flex-start; /* Aligns `.innerInDivSEOAudit` to the left */
+            margin-right: 750px;
+        }
+        .innerInDivSEOAudit{
+            width: 100%;
+            padding: 20px;
+            /* margin-top: 60px; */
+        }
+        .innerInDivSEOAudit>h1{
+            font-size: 32px;
+            font-weight: 800;
+            margin-bottom: 30px;
+            color: var(--c3);
+            width: 100%;
+        }
+        .innerInDivSEOAudit>p{
+            font-size: 14px;
+            font-weight: 400;
+            margin-bottom: 30px;
+            color: var(--c4);
+            text-align: justify;
+        }
+        .innerInDivSEOAudit>div{
+            width: 160px;
+            height: 50px;
+            margin: 0 auto;
+            color: var(--c1);
+            font-size: 18px;
+            font-weight: 600;
+            border-radius: 20px;
+            background: var(--bgLinG);
+            transition: transform 0.6s;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .innerInDivSEOAudit>div:hover{
+            transform: scale(1.1);
+        }
+
+        /****************************************** For Mobile Responsive ***************************************************/
+        @media only screen and (max-width:480px){
+            .divSEOAudit{
+                width: 100%;
+                height: 90vh;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            .inDivSEOAudit{
+                width: 100%;
+            }
+            .innerInDivSEOAudit{
+                width: 100%;
+                margin-top: 60px;
+            }
+        }
+        /***************************** For Tab Responsive ****************************************/
+        @media (min-width:500px) and (max-width:1024px){
+            .divSEOAudit{
+                width: 100%;
+                height: 50vh;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            .inDivSEOAudit{
+                width: 100%;
+            }
+            .innerInDivSEOAudit{
+                width: 100%;
+                margin-top: 60px;
+            }
+        }
+    </style>
+    <section class="secSEOAudit">
+        <div class="divSEOAudit">
+            <div class="inDivSEOAudit container">
+                <div class="innerInDivSEOAudit">
+                    <h1>Research Techniques for SEO Keywords
+
+                    </h1>
+                    <div><a href="" class="open-form-trigger">Get Started</a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+        <!---------------------------- Section For PopUp Form ------------------------------------>
+        <style>
+            /* Button used to open the contact form - fixed at the bottom of the page */
+                .open-button {
+                    background: var(--bgLinG);
+                    color: white;
+                    padding: 16px 20px;
+                    border: none;
+                    cursor: pointer;
+                    opacity: 1;
+                    position: fixed;
+                    bottom: 350px;
+                    transform: rotate(-90deg);
+                    right: -80px;
+                    width: 200px;
+                    z-index: 9;
+                    font-family: var(--ff2);
+                    font-size: 20px;
+                }
+    
+                /* The popup form - hidden by default */
+                .form-popup {
+                    display: none;
+                    position: fixed;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    top: 0;
+                    border: 3px solid #f1f1f1;
+                    z-index: 9;
+                    box-shadow: var(--bs);
+                    background: rgba(0, 0, 0, 0.8);
+                    display: flex; /* Use Flexbox for centering */
+                    justify-content: center; /* Horizontally center */
+                    align-items: center; /
+                }
+    
+                /* Add styles to the form container */
+                .form-container {
+                    max-width: 500px;
+                    padding: 10px;
+                    background-color: white;
+                    padding: 16px 8px 0px 8px;
+                    border-radius: 8px;
+                }
+                .form-container h1{
+                    text-align: center;
+                    font-size: 20px;
+                }
+                .form-container p{
+                    text-align: center;
+                    font-weight: 500;
+                }
+                /* Full-width input fields */
+                .form-container input[type=text], .form-container input[type=password], .form-container input[type=email], .form-container input[type=tel],.form-container select, 
+                .form-container textarea {
+                    width: 100%;
+                    padding: 15px;
+                    margin: 5px 0 22px 0;
+                    border: none;
+                    background: #f1f1f1;
+                    height: 45px;
+                }
+    
+                /* When the inputs get focus, do something */
+                .form-container input[type=text]:focus, .form-container input[type=password]:focus , .form-container input[type=email]:focus, .form-container input[type=tel]:focus,.form-container select:focus, 
+                .form-container textarea:focus {
+                    background-color: #ddd;
+                    outline: none;
+                }
+                .form-container textarea {
+                    resize: vertical;
+                }
+    
+                /* Set a style for the submit/login button */
+                .form-container .btn {
+                    background: var(--bgLinG);
+                    color: white;
+                    padding: 16px 20px;
+                    border: none;
+                    cursor: pointer;
+                    height: 45px;
+                    width: 100%;
+                    margin-bottom:10px;
+                    opacity: 0.8;
+                }
+    
+                /* Add a red background color to the cancel button */
+                .form-container .cancel {
+                    background: red;
+                }
+    
+                /* Add some hover effects to buttons */
+                .form-container .btn:hover, .open-button:hover {
+                    opacity: 1;
+                }
+                .dark-background {
+                    /* background: rgba(0, 0, 0, 0.8); */
+                    transition: background-color 0.3s ease;
+                }
+    
+                /************************** For Mobile Responsive *****************************/
+                @media only screen and (max-width:480px){
+                    .open-button{
+                        position: fixed;
+                        bottom: 0;
+                        left: 50%; /* Move to the center horizontally */
+                        transform: translateX(-50%) rotate(360deg); /* Center the button and rotate it */
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: auto; /* Adjust width if needed */
+                        right: auto; 
+                    }
+                }
+        </style>
+        <section class="secPUF">
+            <div class="divPUF container">
+                <button class="open-button" onclick="openForm()">Get In Touch</button>
+    
+                    <div class="form-popup" id="myForm">
+                    <form action="/action_page.php" class="form-container">
+                        <h1>Searching for Fresh Concepts to Expand Your Company?</h1>
+                        <p>For a free consultation, get in contact!
+
+                        </p>
+                        <input type="text" placeholder="Name" required name="name">
+                        <input type="email" placeholder="Email" name="email" required>
+                        <input type="tel" placeholder="Phone Number" name="number">
+                        <input type="text" placeholder="Company Name" name="cName">
+                        <input type="text" name="wSite" id="wSite" placeholder="Website">
+                        <select id="cars" name="cars">
+                            <option value="Digital Marketing">Digital Marketing</option>
+                            <option value="Search Engine Optimization (SEO)">Search Engine Optimization (SEO)</option>
+                            <option value="Pay Pre Click (PPC)">Pay Pre Click (PPC)</option>
+                            <option value="Social Media Marketing (SMM)">Social Media Marketing (SMM)</option>
+                            <option value="Online Reputation Management (ORM)">Online Reputation Management (ORM)</option>
+                            <option value="Web Design & Development">Web Design & Development</option>
+                            <option value="Others">Others</option>
+                          </select>
+                          <textarea name="" id="" placeholder="Query"></textarea>
+                        <button type="submit" class="btn">Submit</button>
+                        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                    </form>
+                    </div>
+            </div>
+        </section>
+
+        <!------------------------------------------- Section For Official Partner ------------------------------------------------->
+        <style>
+            .secOP{
+                width: 100%;
+                background-image: linear-gradient(45deg, #2372A6, #297887);
+            }
+            .inDivOP{
+                display: flex;
+                gap: 22px;
+            }
+            .inDivOPC{
+                width: 60%;
+                color: var(--c1);
+            }
+            .inDivOPC>h1{
+                color: var(--c1);
+                font-size: 32px;
+                font-weight: 600;
+                margin-bottom: 30px;
+            }
+            .inDivOPC>p{
+                color: var(--c1);
+            }
+            .inDivOP>div+div{
+                width: 20%;
+            }
+            .inDivOP>div+div>img{
+                width: 100%;
+            }
+
+            /***************************** For Mobile Responsive ****************************************/
+            @media only screen and (max-width:480px){
+                .inDivOP{
+                    width: 100%;
+                    display: grid;
+                }
+                .inDivOPC{
+                    width: 100%;
+                }
+                .inDivOP>div+div{
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+            /********************************** For Tab Responsive **************************************/
+            @media (min-width:500px) and (max-width:1024px){
+                .inDivOP{
+                    width: 100%;
+                    display: grid;
+                }
+                .inDivOPC{
+                    width: 100%;
+                }
+                .inDivOP>div+div{
+                    width: 50%;
+                    text-align: center;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin: 0 auto;
+                }
+            }
+        </style>
+        <section class="secOP">
+            <div class="divOP  widget-section">
+                <div class="inDivOP container">
+                    <div class="inDivOPC">
+                        <h1>We have official Google Partner status.</h1>
+                        <p>As a Google Partner, Ryse Digital Solutions makes use of its resources and experience to maximize its clients' online presence. Using Google's advertising platform, we offer specialized solutions to improve marketing initiatives and promote success. Our unrivaled tactics and track record of success are customized to each client's particular requirements, guaranteeing the successful accomplishment of their digital marketing goals.
+
+                        </p>
+                    </div>
+                    <div>
+                        <img src="./asserts/imagesRyse/google-partner.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+          <!--------------------------------- Section For BGPC --------------------------------->
+<style>
+    .inDivORM{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .inDivORM>div{
+        width: 50%;
+    }
+    .inDivORM>div>h1{
+        font-size: 32px;
+        font-weight: 800;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .inDivORM>div+div{
+        width: 40%;
+    }
+    .innerDivORM>p{
+        margin-bottom: 30px;
+        font-size: 14px;
+        font-weight: 500;
+    }
+    b{
+        font-size: 16px;
+        font-weight: 800;
+        color: var(--c3);
+    }
+    
+                /* The popup form - hidden by default */
+                .form-popup1 {
+                    border: 3px solid #f1f1f1;
+                    box-shadow: var(--bs);
+                    display: flex; /* Use Flexbox for centering */
+                    justify-content: center; /* Horizontally center */
+                    align-items: center; /
+                }
+    
+                /* Add styles to the form container */
+                .form-container1 {
+                    max-width: 500px;
+                    padding: 10px;
+                    background-color: white;
+                    padding: 16px 8px 0px 8px;
+                    border-radius: 8px;
+                }
+                .form-container1 h1{
+                    text-align: center;
+                }
+                .form-container1 p{
+                    text-align: center;
+                    font-weight: 500;
+                }
+                /* Full-width input fields */
+                .form-container1 input[type=text], .form-container1 input[type=password], .form-container1 input[type=email], .form-container1 input[type=tel],.form-container1 select, 
+                .form-container1 textarea {
+                    width: 100%;
+                    padding: 15px;
+                    margin: 5px 0 22px 0;
+                    border: none;
+                    background: #f1f1f1;
+                    height: 45px;
+                }
+    
+                /* When the inputs get focus, do something */
+                .form-container1 input[type=text]:focus, .form-container1 input[type=password]:focus , .form-container1 input[type=email]:focus, .form-container1 input[type=tel]:focus,.form-container1 select:focus, 
+                .form-container1 textarea:focus {
+                    background-color: #ddd;
+                    outline: none;
+                }
+                .form-container1 textarea {
+                    resize: vertical;
+                }
+    
+                /* Set a style for the submit/login button */
+                .form-container1 .btn {
+                    background: var(--bgLinG);
+                    color: white;
+                    padding: 16px 20px;
+                    border: none;
+                    cursor: pointer;
+                    height: 45px;
+                    width: 100%;
+                    margin-bottom:10px;
+                    opacity: 0.8;
+                }
+
+    
+                /* Add some hover effects to buttons */
+                .form-container .btn:hover, .open-button:hover {
+                    opacity: 1;
+                }
+                .dark-background {
+                    transition: background-color 0.3s ease;
+                }
+
+    /*************************** For Mobile Responsive ***********************************/
+    @media only screen and (max-width:480px){
+        .inDivORM {
+            display: flex;
+            flex-direction: column; /* Stack content with image below */
+            align-items: center;
+            width: 100%;
+            margin: 0;
+            /* padding: 10px; */
+        }
+        .inDivORM>div{
+            width: 100%;
+        }
+        .inDivORM>div+div{
+            width: 100%;
+        }
+        .inDivORM1 {
+            width: 100%;
+        }
+        .innerDivORM{
+            width: 100%;
+        }
+
+    }
+    /************************************* For Tab Responsive ****************************************/
+    @media (min-width:500px) and (max-width:1024px){
+        .inDivORM {
+            display: flex;
+            flex-direction: column; /* Stack content with image below */
+            align-items: center;
+            width: 100%;
+            margin: 0;
+            /* padding: 10px; */
+        }
+        .inDivORM>div{
+            width: 100%;
+        }
+        .inDivORM>div+div{
+            width: 100%;
+        }
+        .inDivORM1 {
+            width: 100%;
+        }
+        .innerDivORM{
+            width: 100%;
+        }
+    }
+</style>
+  <section class="secORM widget-section">
+    <div class="divORM container">
+        <div class="inDivORM">
+            <div class="inDivORM1">
+                <div class="innerDivORM">
+                    <p>Any business or marketing campaign's success depends heavily on keyword research, but this is especially true when trying to find the best SEO company with SEO specialists to work with. It determines the target keywords that the audience uses while using search engines to look for goods or services. Here are some reasons why keyword research is crucial and how it can help your company:
+                    </p>
+                    <p><b>Increased Visibility:</b> You may learn more about the language and jargon your target clients are using by carrying out in-depth keyword research. You may incorporate these keywords into your website's content with the assistance of Ryse Digital Solutions' SEO strategists, improving the likelihood that it will show up in relevant search engine results. By doing this, you increase your visibility and encourage natural visitors to your website.</p>
+                    <p><b>Focused Traffic: </b>By working with a digital marketing agency, you can draw in highly focused visitors to your website through efficient keyword research. By understanding the intent behind individual keywords, you can align your content and products to fulfill those demands. Higher-quality traffic has a higher chance of turning into leads or sales as a result.
+                    </p>
+                    <p><b>Material Optimization: </b>Researching keywords enables you to produce worthwhile and pertinent material that appeals to your target market. You may improve your website's pages, blog posts, and other material to draw in search engine traffic and answer user questions by working with an SEO provider to determine the most popular and pertinent keywords.</p>
+                    <p><b>Competitive advantage:</b>With the help of Ryse Digital Solutions' SEO specialists, you can remain ahead of the competition by doing keyword research to learn about their strategies and techniques. You may find possibilities and market gaps by looking at their targeted keywords. This gives you a competitive edge and allows you to fine-tune your own keyword targeting.
+                    </p>
+                    <p>There are various processes in the keyword research process, which is assisted by SEO experts. Creating a list of possible keywords, including terms associated with SEO specialists, is the first step in the process. After that, you can collect information on search volumes, degrees of competition, and keyword variations using keyword research tools. You may improve your keyword list, rank the most valuable terms, and strategically use them in your content and website by analyzing this data.</p>
+                    <p>To sum up, any business hoping to thrive online must conduct keyword research, and hiring the top SEO firm to help you is critical. By adhering to the clearly defined keyword research procedure, you may enhance your online visibility, boost traffic, and produce leads with the assistance of SEO specialists. To help your success in digital marketing, work with the top Vijayawada SEO agency to conduct in-depth keyword analysis.</p>
+                </div>
+            </div>
+            <div>
+                <section class="secPUF1">
+                    <div class="divPUF1 container">
+            
+                            <div class="form-popup1">
+                            <form action="/action_page.php" class="form-container1">
+                                <h1>Searching for Fresh Concepts to Expand Your Company?</h1>
+                                <p>For a free consultation, get in contact!</p>
+                                <input type="text" placeholder="Name" required name="name">
+                                <input type="email" placeholder="Email" name="email" required>
+                                <input type="tel" placeholder="Phone Number" name="number">
+                                <input type="text" placeholder="Company Name" name="cName">
+                                <input type="text" name="wSite" id="wSite" placeholder="Website">
+                                <select id="cars" name="cars">
+                                    <option value="Digital Marketing">Digital Marketing</option>
+                                    <option value="Search Engine Optimization (SEO)">Search Engine Optimization (SEO)</option>
+                                    <option value="Pay Pre Click (PPC)">Pay Pre Click (PPC)</option>
+                                    <option value="Social Media Marketing (SMM)">Social Media Marketing (SMM)</option>
+                                    <option value="Online Reputation Management (ORM)">Online Reputation Management (ORM)</option>
+                                    <option value="Web Design & Development">Web Design & Development</option>
+                                    <option value="Others">Others</option>
+                                  </select>
+                                  <textarea name="" id="" placeholder="Query"></textarea>
+                                <button type="submit" class="btn">Submit</button>
+                            </form>
+                            </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+    </div>
+  </section>
+
+  <!--------------------------------------- Section For Carousel ---------------------------------------------->
+  <style>
+    .secSC{
+        width: 100%;
+        height: auto;
+        display: block;
+        position: relative;
+    }
+    .divSC{
+        background-image: url("asserts/imagesRyse/banner-6.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 85vh;
+    }
+    .inDivSC{
+        width: 100%;
+    }
+    .inDivSC h1{
+        width: 100%;
+        text-align: center;
+        padding-top: 60px;
+        font-size: 35px;
+        font-weight: 400;
+        color: var(--c1);
+        font-family: "League Spartan", sans-serif;
+    }
+    .carousel {
+        background: transparent;
+        width: 60%;
+        height: 50vh ;
+        text-align: center;
+        margin-left: 300px;
+        margin-top: 100px;
+    }
+
+    .carousel-cell {
+        width: 66%;
+        height: 100%;
+        margin-right: 10px;
+        background: transparent;
+        border-radius: 5px;
+        counter-increment: gallery-cell;
+        color: var(--c1);
+    }
+    .inCarousel h3{
+        color: var(--c1);
+        margin-top: 20px;
+    }
+    .carousel-cell img{
+        width: 150px;
+    }
+    .carousel-cell p{
+        font-size: 10px;
+        line-height: 20px;
+        margin-top: 20px;
+    }
+    .carousel-cell>img+p{
+        color: var(--c1);
+    }
+    .inCarousel>p{
+        color: var(--c1);
+    }
+
+    /* cell number */
+    .carousel-cell:before {
+        display: block;
+        text-align: center;
+        /* content: counter(gallery-cell); */
+        line-height: 200px;
+        font-size: 80px;
+        height: auto;
+        color: white;
+        /* margin-top: 40px; */
+    }
+
+    /********************** For Mobile Responsive *******************************/
+    @media only screen and (max-width:480px){
+        .carousel{
+            margin: 0;
+            margin-top: 20px;
+            width: 100%;
+            height: 65vh !important;
+        }
+    }
+     /**************************** For Tab Responsive  **********************************/
+     @media (min-width:500px) and (max-width:1024px){
+            .carousel{
+                margin: 0;
+                margin-top: 100px;
+                width: 100%;
+                height: 35vh;
+            }
+        }
+</style>
+<section class="secSC">
+    <div class="divSC">
+        <div class="inDivSC">
+            <h1>What Our Client Says</h1>
+            <!-- Flickity HTML init -->
+            <div class="carousel" data-flickity='{ "autoPlay": true }'>
+                <div class="carousel-cell">
+                        <img src="./asserts/imagesRyse/SoecLogo.jpg" alt="">
+                        <p>We are really pleased with the way Ryse Digital Solutions boosted our online visibility. Their staff is committed and collaborated with ours to comprehend our needs and target market. Fantastic work all around!
+                        </p>
+                        <div class="inCarousel">
+                            <h3>RJESH</h3>
+                            <p>SOEC MANAGER</p>
+                        </div>
+                </div>
+                <div class="carousel-cell">
+                    <img src="./asserts/imagesRyse/BindhuLogo.jpg" alt="">
+                    <p>Our satisfaction with Ryse Digital Solutions' assistance in expanding our online visibility is quite high. To better understand our needs and target audience, their team collaborated with ours and is committed. Excellent work all around!
+                    </p>
+                    <div class="inCarousel">
+                        <h3>Dr. Hima Bindhu </h3>
+                        <p>Dermatologist Doctor, Dr. Bindhus Cosmetic Skin and Laser Clinic</p>
+                    </div>
+                </div>
+                <div class="carousel-cell">
+                    <img src="./asserts/imagesRyse/WplLogo.jpg" alt="">
+                    <p>We are thrilled that Ryse Digital Solutions was able to help us expand our online visibility. With great dedication, their team collaborated with ours to comprehend our needs and target market. Outstanding work all around!
+                    </p>
+                    <div class="inCarousel">
+                        <h3>Max</h3>
+                        <p>Manager, Whiz Prep Lab</p>
+                    </div>
+                </div>
+                <div class="carousel-cell">
+                    <img src="./asserts/imagesRyse/JaimaxLogo.jpg" alt="">
+                    <p>We are thrilled with the way Ryse Digital Solutions boosted our online visibility. Their staff is committed and collaborated with ours to comprehend our needs and target market. Amazing work all around!
+                    </p>
+                    <div class="inCarousel">
+                        <h3>Amar</h3>
+                        <p>Head Of JaiMax Coin, JaiMax Coin</p>
+                    </div>
+                </div>
+                <div class="carousel-cell">
+                    <img src="./asserts/imagesRyse/VijayaaLogo.jpg" alt="">
+                    <p>The team at Ryse Digital Solutions is dynamic, knowledgeable, and quick to provide content writing services. In addition to producing flawless content for Vijayaa Sandalwood Projects, the crew has been very attentive to our questions and concerns and has been quite personable. They have demonstrated exceptional efficiency in comprehending the nature of the assignment and producing pertinent content within the allotted time frames. We are thrilled to be connected with Ryse Digital Solutions and eager to collaborate with them going forward.
+                    </p>
+                    <div class="inCarousel">
+                        <h3>Murali Krishna</h3>
+                        <p>Growth & Product Manager, Vijayaa Sandalwood Projects</p>
+                    </div>
+                </div>                
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--------------------------------------------- Section For Our Services ----------------------------------------->
+<style>
+    .secOS{
+        background-color: #EEF6F7;
+        width: 100%;
+    }
+    .divOS>h1{
+        font-size: 32px;
+        font-weight: 600;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .divOS>p{
+        font-size: 14px;
+        font-weight: 800;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .cardOS{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); /* 2 columns */
+            gap: 20px;
+            justify-content: center;
+            margin-top: 30px;
+        }
+        .inCardOS{
+            width: 100%;
+            margin-top: 30px;
+            text-align: center;
+            box-shadow: var(--bs);
+            border-radius: 10px;
+            background-color: rgb(255 255 255 / 10%);
+            transition: .3s all;
+        }
+        .inCardOS:hover{
+            transform: scale(1.03);
+            box-shadow: var(--bs);
+            text-decoration: underline gold;
+        }
+        .inCardOS>a{
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .inCardOS>a>img{
+            margin:20px 0;
+            width: 20%;
+        }
+        .inCardOS>a>h1{
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            font-size: 20px
+        }
+
+        /*********************************** For Mobile Responsive *******************************************/
+        @media only screen and (max-width:480px){
+            .cardOS{
+                grid-template-columns: 1fr;
+            }
+        }
+</style>
+<section class="secOS widget-section">
+    <div class="divOS container">
+        <h1>Our Offerings</h1>
+        <p>Utilize Ryse Digital Solutions' All-Inclusive Services to Revolutionize Your Online Presence. We provide a broad selection of effective digital marketing solutions in Vijayawada that are customized to meet your particular business requirements.</p>
+        <div class="cardOS">
+            <div class="inCardOS">
+                <a href="./SEO.html">
+                    <img src="./asserts/imagesRyse/SEOIconServices.png" alt="">
+                    <h1>Optimization of Search Engines (SEO)</h1>
+                </a>
+            </div>
+            <div class="inCardOS">
+                <a href="./PPC.html">
+                    <img src="./asserts/imagesRyse/PPCIconServices2.png" alt="">
+                    <h1>Advertising Pay Per Click (PPC)</h1>
+                </a>
+            </div>
+            <div class="inCardOS">
+                <a href="./ORM.html">
+                    <img src="./asserts/imagesRyse/ORMIconServices3.png" alt="">
+                    <h1>Management of Online Reputation (ORM)</h1>
+                </a>
+            </div>
+            <div class="inCardOS">
+                <a href="./SMM.html">
+                    <img src="./asserts/imagesRyse/SMMIconServices4.png" alt="">
+                    <h1>Management of Social Media (SMM)</h1>
+                </a>
+            </div>
+            <div class="inCardOS">
+                <a href="./ContentWriting.html">
+                    <img src="./asserts/imagesRyse/CopyWriteIconServices5.png" alt="">
+                    <h1>Copywriting for Content</h1>
+                </a>
+            </div>
+            <div class="inCardOS">
+                <a href="">
+                    <img src="./asserts/imagesRyse/UIUXIconServices6.png" alt="">
+                    <h1>Design of UI/UX</h1>
+                </a>
+            </div>
+            <div class="inCardOS">
+                <a href="./WebDesigning.html">
+                    <img src="./asserts/imagesRyse/WebCodingIconServices7.png" alt="">
+                    <h1>Development of Web Pages</h1>
+                </a>
+            </div>
+    </div>
+</section>
+         <!--------------------------- Section For Blog ----------------------------->
+
+         <style>
+            .inDivBlog{
+                width: 100%;
+            }
+            .inDivBlog h1{
+                text-align: center;
+                font-size: 36px;
+                font-weight: 500;
+                margin-bottom: 60px;
+                color: var(--c3);
+            }
+            .innerDivBlog{
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+            }
+            .inCardDiv{
+                width: 30%;
+                box-shadow: var(--bs);
+                overflow: hidden;
+            }
+            .inCardDiv img{
+                width: 100%;
+                display: inline-block;
+                transition: transform 1s;
+                margin-bottom: 30px;
+            }
+            .inCardDiv img:hover{
+                transform: scale(1.1) rotate(3deg);  
+                cursor: pointer;
+            }
+            .innerCardDiv{
+                padding: 16px 22px;
+            }
+            .innerCardDiv h4{
+                text-align: center;
+                font-weight: 500;
+                font-size: 25px;
+                margin-bottom: 25px;
+                color: var(--c3);
+            }
+            .innerCardDiv h4:hover{
+                color: #48AD01;
+            }
+            .innerCardDiv p{
+                font-size: 14px;
+                color: var(--c4);
+                margin-bottom: 20px;
+                text-align: justify;
+            }
+            .innerCardDiv .aPara{
+                height: 40px;
+                width: 50%;
+                display: flex;
+                justify-content: center; /* Centers text horizontally */
+                align-items: center;
+                text-align: center;
+                text-transform: uppercase;
+                margin: 0 auto;
+                color: #fff;
+                background: var(--bgLinG);
+                font-size: 16px;
+                font-weight: 500;
+                transition: .6s ease all;
+            }
+            .innerCardDiv .aPara:hover{
+                transform: scale(1.1);
+            }
+    
+            /************************ For Mobile Responsive ****************************************/
+            @media only screen and (max-width:480px){
+                .innerDivBlog{
+                    width: 100%;
+                    display: grid;
+                }
+                .inCardDiv{
+                    width: 100%;
+                    margin-bottom: 30px;
+                }
+            }
+    
+            /************************************** For Tab Responsive *******************************/
+            @media (min-width:500px) and (max-width:1024px){
+                .innerDivBlog{
+                    width: 100%;
+                    display: grid;
+                }
+                .inCardDiv{
+                    width: 100%;
+                    margin-bottom: 30px;
+                }
+            }
+        </style>
+        <section class="secBlog widget-section">
+            <div class="divBlog container">
+                <div class="inDivBlog">
+                    <h1>Recent SEO Blogs</h1>
+                    <div class="innerDivBlog">
+                        <div class="inCardDiv">
+                            <img src="./asserts/imagesRyse/blog6_img.png" alt="">
+                            <div class="innerCardDiv">
+                                <h4><a href="./SMMBlog3.html">🚀 Unlock Explosive Growth with Facebook Pixel: A Game-Changer for Your Business!</a></h4>
+                                <p>Facebook Pixel has become a game-changer for businesses looking for creative methods to optimize their online marketing campaigns in the ever-changing digital marketplace.</p>
+                                <p class="aPara"><a href="./SMMBlog3.html">Read More</a></p>
+                            </div>
+                        </div>
+                        <div class="inCardDiv">
+                            <img src="./asserts/imagesRyse/blog7_img.png" alt="">
+                            <div class="innerCardDiv">
+                                <h4><a href="./SMMBlog4.html">🚀 Boosting Business: Mastering Facebook Ads for 🎯 Powerful Lead Generation</a></h4>
+                                <p>Businesses are depending more and more on online platforms in the current digital era to broaden their customer base, create leads, and spur expansion. Facebook ads are one of the most effective vehicles for this, and they have changed the game.</p>
+                                <p class="aPara"><a href="./SMMBlog4.html">Read More</a></p>
+                            </div>
+                        </div>
+                        <div class="inCardDiv">
+                            <img src="./asserts/imagesRyse/blog8_img.png" alt="">
+                            <div class="innerCardDiv">
+                                <h4><a href="./DMBlog3.html">🚀 Boost Your Practice! 🏥 Vijayawada's Premier Digital Marketing Services for Medical Professionals 💻✨</a></h4>
+                                <p>Healthcare professionals in Vijayawada stand to gain a great deal from having a strong online presence in the digital-first world of today. An effective digital marketing plan is essential for physicians</p>
+                                <p class="aPara"><a href="./DMBlog3.html">Read More</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <!------------------------------------ We love to hear more about -------------------------------------->
+        <style>
+            .secWLT{
+                background-color: #EAEBED;
+            }
+            .inDivWLT>div{
+                display: flex;
+                gap: 22px;
+                justify-content: center
+            }
+            .inDivWLT>div>p{
+                border: 1px solid;
+                border-radius: 50px;
+                text-align: center;
+                width: 20%;
+                height: 50px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 20px;
+                font-weight: 600;
+            }
+            .inDivWLT>div+h1{
+                margin-top: 50px;
+                font-size: 36px;
+                font-weight: 800;
+                text-align: center;
+            }
+            .getS{
+                display: flex;
+                justify-content: center;
+                align-items: center; /* Centers the text vertically */
+                margin: 150px auto; /* Centers the box within the container */
+                width: 30%;
+                cursor: pointer;
+                margin-top: 70px;
+            }
+            .getS img{
+                width: 100%;
+            }
+    
+            /*************************** For Mobile Responsive *************************************/
+            @media only screen and (max-width:480px){
+                .inDivWLT>div>p{
+                    border: 1px solid;
+                    border-radius: 50px;
+                    text-align: center;
+                    width: 100%;
+                    height: 50px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 20px;
+                    font-weight: 600;
+                }
+                .getS{
+                    margin-top: 40px;
+                }
+            }
+            /******************************** For Tab Responsive ******************************************/
+            @media (min-width:500px) and (max-width:1024px){
+                .getS{
+                    margin-top: 40px;
+                }
+            }
+        </style>
+        <section class="secWLT">
+            <div class="divWLT widget-section">
+                <div class="inDivWLT container">
+                    <div>
+                        <p><a href="./Career.html">Work With Us</a></p>
+                    </div>
+                    <h1>We would love to hear more about your project</h1>
+                    <div class="getS">
+                        <img src="./asserts/imagesRyse/get-started-img.png" class="open-form-trigger" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+         <!---------------------------------------- Section for Map ------------------------------------------------>
+         <style>
+            .secMap{
+                width: 100%;
+                height: auto;
+            }
+            .divMap iframe{
+                width: 100%;
+                vertical-align: middle;
+            }
+        </style>
+        <section class="secMap">
+            <div class="divMap">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3825.5765062088067!2d80.64508140000001!3d16.496967899999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a35edb86fbc3dc5%3A0xec6e652b88304467!2sRyse%20Digital%20Solutions%20-%20Best%20Digital%20Marketing%20Agency%20In%20Vijayawada!5e0!3m2!1sen!2sin!4v1730707430240!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+    
+        <!--------------------------------------------------- Footer Part ------------------------------------------------>
+        <style>
+       
+        </style>
+        <footer class="secFoot">
+            <div class="divFoot widget-section">
+                <div class="inDivFoot container">
+                    <div class="innerInDivImg">
+                        <a href="./index.html"><img src="./asserts/imagesRyse/logo.png" alt=""></a>
+                    </div>
+                    <div class="innerInDivContent1">
+                        <div><a href="./AboutUs.html">About Us</a></div>
+                        <div>
+                            <p>Our Services</p>
+                            <ul>
+                                <li>
+                                    <a href="">Digital Marketing</a>
+                                </li>
+                                <li>
+                                    <a href="./SEO.html">Search Engine Optimization</a>
+                                </li>
+                                <li>
+                                    <a href="./PPC.html">PPC Advertising</a>
+                                </li>
+                                <li>
+                                    <a href="./SMM.html">Social Media Marketing</a>
+                                </li>
+                                <li>
+                                    <a href="./ORM.html">Online Reputation Management</a>
+                                </li>
+                                <li>
+                                    <a href="./ContentWriting.html">Content Copywriting</a>
+                                </li>
+                                <li>
+                                    <a href="./WebDesigning.html">Web Design & Development</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="innerInDivContent2">
+                        <div>
+                            <p>Resources</p>
+                            <div>
+                                <ul>
+                                    <li>
+                                        <a href="./Blog.html">Blog</a>
+                                    </li>
+                                    <li>
+                                        <a href="./Testimonials.html">Testimonials</a>
+                                    </li>                                    
+                                    <li>
+                                        <a href="./Career.html">Career</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div>
+                            <p>Reach Us @</p>
+                            <ul>
+                                <li>
+                                    Reach us at <a href="">info@rysedigital.in</a>
+                                </li>
+                                <li>
+                                    Phone: <a href="">+91-738-6050-188</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p>FOLLOW US</p>
+                            <ul>
+                                <li><a href="https://www.facebook.com/RyseDigitalSolutions"><i class="fa-brands fa-facebook"></i></a></li>
+                                <li><a href="https://www.instagram.com/ryse_digital__?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="fa-brands fa-instagram"></i></a></li>
+                                <li><a href="https://www.linkedin.com/in/digital-ryse-a55a01338?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B0ljkHgWaSRexPVwPXRbISA%3D%3D"><i class="fa-brands fa-linkedin"></i></a></li>
+                                <li><a href="https://www.youtube.com/@rysedigital-host"><i class="fa-brands fa-youtube"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="innerInDivContent3">
+                        <div>
+                            <p class="conPara"><a href="./Contact.html">Contact Us</a></p>
+                        </div>
+                        <div>
+                            <p>Ryse Digital Solutions 40-15-8/3, 3rd floor, Sindhu Towers, Nandamuri rd, Sriram Nagar, Benz Circle, Vijayawada – 520010.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="footBot">
+                    <p>Copyright © 2024. Ryse Digital Solutions Pvt.Ltd</p>
+                </div>
+            </div>
+        </footer>
+
+         <!-------------------------------- Script Code --------------------------------------->
+
+         <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+         <script src="https://npmcdn.com/flickity@2/dist/flickity.pkgd.js"></script>
+     
+         <script>
+             function openNav(){
+                 if((window.innerWidth >=500) && (window.innerWidth <=1024)){
+                     document.getElementById("mySidebar").style.width="75%";
+                     document.querySelector(".divMTLogo").style.display = "none";
+                 }else{
+                     document.getElementById("mySidebar").style.width = "100%";
+                 }
+             }
+             
+             function closeNav() {
+               document.getElementById("mySidebar").style.width = "0";
+               document.querySelector(".divMTLogo").style.display = "block";
+               document.querySelector(".divMTLogo").style.transition = ".6s all ease"
+             }
+     
+             var coll = document.getElementsByClassName("collapsible");
+                 var i;
+     
+                 for (i = 0; i < coll.length; i++) {
+                 coll[i].addEventListener("click", function() {
+                     this.classList.toggle("active");
+                     var content = this.nextElementSibling;
+                     if (content.style.display === "block") {
+                     content.style.display = "none";
+                     } else {
+                     content.style.display = "block";
+                     }
+                 });
+                 }
+                 function openForm() {
+                     document.getElementById("myForm").style.display = "flex"; // Display the form in the center
+                     document.body.style.backgroundColor = "#333"; // Darken the background color
+                     document.querySelector(".open-button").style.display = "none";
+                 }
+     
+                 function closeForm() {
+                     document.getElementById("myForm").style.display = "none";
+                     document.body.style.backgroundColor = ""; // Reset the background color
+                     document.querySelector(".open-button").style.display = "block";
+                 }
+                 document.querySelectorAll('.open-form-trigger').forEach(button => {
+                     button.addEventListener('click', function(event) {
+                         event.preventDefault(); // Prevent default link behavior
+                         openForm();
+                     });
+                 });
+                 document.addEventListener("DOMContentLoaded", function() {
+                     document.getElementById("myForm").style.display = "none";
+                 });
+             </script>
+</body>
+</html>

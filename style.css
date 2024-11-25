@@ -1,0 +1,459 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html,body { font-size: 16px; font-family: "DM Sans", sans-serif; background: #fff; color: #000; line-height: 1.7em; }
+
+a { text-decoration: none ; color: unset ; }
+ul { list-style: none; }
+img { vertical-align: middle; }
+
+p { font-size: 16px; }
+
+h1,h2,h3,h4,h5,h6 { line-height: 1.3em; }
+section { overflow: hidden; }
+ 
+.container { max-width: 1140px; margin: auto; }
+.widget-section { display: block; padding: 30px 16px; position: relative; width: 100%; height: auto;}
+
+button { border: 0; outline: 0; font-family: var(--ff); letter-spacing: 1px; }
+h1 h2 h3 h4 h5 h6 {color: var(--c3)}
+p{color: var(--c4)}
+html{
+  scroll-behavior: smooth;
+}
+
+:root {
+
+	--c1 : #fff;
+	--c2 : #000;
+	--c3 : #333;
+	--c4 : #5b5555;
+	--lg: ;
+  --bc1: #C4DFA9;
+  --bc2: #F7F3EE;
+
+	--bs: 0 3px 15px 0 #0000001a;
+	--bs2 : 0 3.4px 2.7px -30px #0000000f, 0 8.2px 8.9px -30px #00000012, 0 25px 40px -30px #00000033;
+	--bgC1 :#E7E9EB;
+
+	--ts : all 0.5s ease-in-out;
+
+	--gbg : linear-gradient(to right, var(--c1) 0%, var(--c2) 100%);
+	--gbgr : linear-gradient(to right, var(--c2) 0%, var(--c1) 100%);
+  --bgLinG : linear-gradient(45deg, #20A7CF, #35BE51, #1F95C7, #70D181);
+  --bglinG2 : linear-gradient(180deg, #2372A6, #297887); 
+
+
+	--ff : "Font Awesome 6 Pro";
+	--fs : 40px;
+    --ff2: "DM Sans", sans-serif;
+}
+
+/*********************************************** Header Css **********************************************/
+
+.ryseHead{
+  width: 100%;
+  height: auto;
+  box-shadow: var(--bs);
+  display: block;
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  z-index: 9;
+}
+.ryseHeadNav{
+  width: 100%;
+}
+.ryseHeadDiv{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.ryseLogo{
+  width: 15%;
+}
+.ryseLogo a{
+  width: 100%;
+}
+
+    /************ Links ***************/
+.ryseLogo a img{
+  width: 100%;
+}
+.ryseLinks{
+  width: 55%;
+}
+.ulRyseLinks{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  font-weight: 900;
+}
+.ulRyseLinks button{
+  background-color: transparent;
+  font-family: var(--ff2);
+  font-size: 18px;
+  font-weight: 900;
+  cursor: pointer;
+}
+.dropBtn>.dA{
+  transition: transform 1s;
+}
+.dropBtn:hover >.dA{
+  transform: rotate(180deg);
+}
+        /************* Drop Down links  *****************/
+        .dropDown{
+          float: left;
+          position: relative;
+        }
+       .divDropDownContent{
+          height: auto;
+          min-width: 350px;
+          z-index: 9;
+          position: absolute;
+          background-color: #f9f9f9;
+          box-shadow: var(--bs);
+          display: none;
+       }
+       .ulDropDownContent{
+          font-size: 16px;
+          font-weight: 600;
+          line-height: 45px;
+       }
+       .ulDropDownContent li:hover{
+        color: var(--c1);
+        background: var(--bgLinG)
+       }
+       .dropDown:hover .divDropDownContent{
+        display: block;
+       }
+       
+     
+        
+    /*********** lets Talk ********/
+.ryseLetTalk{
+  border: 2px solid;
+  width: 180px;
+  height: 50px;
+  align-content: center;
+  text-align: center;
+  background: var(--bgLinG);
+  color: var(--c1);
+  font-size: 18px;
+  font-weight: 900;
+  border-radius: 10px;
+  transition: .5s all ease;
+  cursor: pointer;
+  box-shadow: var(--bs);
+}
+.ryseLetTalk:hover{
+  transform: scale(1.1);
+}
+.divMTLogo{
+  width: 24%;
+  display: none;
+}
+.divMTLogo a{
+  width: 100%;
+}
+.divMTLogo a img{
+  width: 100%;
+}
+.closeBtn, .openBtn{
+  display: none;
+}
+
+/***************************** For Mobile Responsive ************************************/
+@media only screen and (max-width:480px){
+  .divMTLogo{
+    display: block;
+    float: right;
+  }
+  .closeBtn, .openBtn{
+    display: block;
+  }
+  .sidebar {
+    /* height: 100%; */
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #f9f9f9;
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+  
+  .sidebar{
+    width: 100%;
+    padding: 2px 8px 8px -2px;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidebar .closeBtn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 40px;
+    margin-left: 50px;
+    background: var(--bgLinG);
+    color: white;
+  }
+  
+  .openBtn {
+    font-size: 20px;
+    cursor: pointer;
+    background: var(--bgLinG);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+  }
+  .ryseHeadDiv{
+    display: grid;
+    width: 100%;
+    border-left: 10px;
+  }
+  .ryseLogo{
+    width: 80%;
+  }
+  .ulRyseLinks{
+    display: grid;
+    width: 100%;
+    padding-left: 10px;
+    line-height: 40px;
+  }
+  .divDropDownContent{
+    width: 100%;
+  }
+  .ulDropDownContent{
+    max-height: 100px;
+    overflow-x: scroll;
+    font-size: 16px;
+    line-height: 40px;
+  }
+  
+}
+
+/******************************* For Tab Responsive ***********************************/
+@media (min-width:500px) and (max-width:1024px){
+  .divMTLogo{
+    display: block;
+    float: right;
+    width: 13%;
+  }
+  .closeBtn, .openBtn{
+    display: block;
+  }
+  .sidebar {
+    /* height: 100%; */
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #f9f9f9;
+    overflow-x: hidden;
+    transition: width 0.5s ease;
+  }
+  
+  .sidebar{
+    padding: 2px 0px 8px -2px;
+    width: 100%;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidebar .closeBtn {
+    /* width: 100%; */
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 40px;
+    margin-left: 50px;
+    background: var(--bgLinG);
+    color: white;
+  }
+  
+  .openBtn {
+    /* width: 100%; */
+    font-size: 20px;
+    cursor: pointer;
+    background: var(--bgLinG);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+  }
+  .ryseHeadDiv{
+    display: grid;
+    justify-content: left;
+    width: 100%;
+    border-left: 10px;
+  }
+  .ryseLogo{
+    width: 80%;
+  }
+  .ulRyseLinks{
+    display: grid;
+    width: 100%;
+    padding-left: 10px;
+    line-height: 40px;
+  }
+  .divDropDownContent{
+    width: 100%;
+  }
+  .ulDropDownContent{
+    max-height: 100px;
+    overflow-x: scroll;
+    font-size: 16px;
+    line-height: 40px;
+  }
+}
+
+/*************************************** Footer Css ***********************************************/
+.secFoot{
+  width: 100%;
+  height: auto;
+  background-color: #1C2B3D;
+}
+.inDivFoot{
+  width: 100%;
+  padding: 16px 22px;
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1px solid #fff;
+}
+.innerInDivImg{
+  width: 15%;
+}
+.innerInDivImg a{
+  width: 100%;
+}
+.innerInDivImg img{
+  width: 100%;
+}
+.innerInDivContent1{
+  color: var(--c1);
+}
+.innerInDivContent1>div>a{
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.innerInDivContent1>div+div>p{
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.innerInDivContent1>div+div>p+ul>li{
+  margin-bottom: 10px;
+}
+.innerInDivContent2{
+  color: var(--c1);
+}
+.innerInDivContent2>div>p{
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.innerInDivContent2>div+div{
+  margin-top: 20px;
+}
+.innerInDivContent2>div+div+div>ul{
+  display: flex;
+  gap: 22px;
+  font-size: 26px;
+}
+.innerInDivContent2>div+div+div>ul>li{
+  transition: 0.5s ease all;
+}
+.innerInDivContent2>div+div+div>ul>li:hover{
+  transform: scale(1.1);
+}
+.innerInDivContent3{
+    color: var(--c1);
+    width: 25%;
+}
+.innerInDivContent3>div>.conPara{
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 600;
+}
+.innerInDivContent3>div{
+  width: 100%;
+}
+.footBot{
+  color: var(--c1);
+  font-size: 25px;
+  margin-top: 22px;
+  margin-left: 50px;
+}
+.footBot>p{
+  color: var(--c1);
+}
+.innerInDivContent3 p{
+  color: var(--c1);
+}
+.innerInDivContent2 p{
+  color: var(--c1);
+}
+.innerInDivContent1 p{
+  color: var(--c1);
+}
+
+/************************ For Mobile Responsive *******************************/
+@media only screen and (max-width:480px){
+ .inDivFoot{
+  width: 100%;
+  display: grid;
+ }
+ .inDivFoot>div{
+  margin-bottom: 20px;
+ }
+ .innerInDivContent3{
+  width: 100%;
+ }
+ .innerInDivImg{
+  width: 50%;
+}
+ .innerInDivImg a{
+    width: 100%;
+  }
+  .innerInDivImg img{
+    width: 100%;
+  }
+  .footBot{
+    width: 100%;
+    margin: 0;
+  }
+}
+
+/************************ For Tab Responsive ***********************************/
+@media (min-width:500px) and (max-width:1024px){
+  .inDivFoot{
+    width: 100%;
+    display: grid;
+   }
+   .inDivFoot>div{
+    margin-bottom: 20px;
+   }
+   .innerInDivContent3{
+    width: 25%;
+   }
+   .innerInDivImg{
+    width: 50%;
+  }
+   .innerInDivImg a{
+      width: 100%;
+    }
+    .innerInDivImg img{
+      width: 100%;
+    }
+    .footBot{
+      width: 100%;
+      margin: 0;
+    }
+}
